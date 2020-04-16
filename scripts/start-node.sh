@@ -35,8 +35,8 @@ done
 
 nodef init $1 --chain-id testnet
 
-cp ~/git/hdac-test/genesis.json ~/.nodef/config/
-cp ~/git/hdac-test/manifest.toml ~/.nodef/config/
+cp ~/git/friday-test/settings/genesis.json ~/.nodef/config/
+cp ~/git/friday-test/settings/manifest.toml ~/.nodef/config/
 SEED=$(cat ~/git/friday-test/settings/seed-address.txt)
 sed -i "s/seeds = \"\"/seeds = $SEED/g" ~/.nodef/config/config.toml
 
