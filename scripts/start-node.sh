@@ -5,7 +5,7 @@ if [ $# == 0 ]; then
 	exit 0 
 fi
 
-SRC="go/src/github.com/hdac-io/friday"
+SRC="$HOME/go/src/github.com/hdac-io/friday"
 rm -rf ~/.nodef/config
 rm -rf ~/.nodef/data
 rm -rf ~/.clif
@@ -31,7 +31,7 @@ do
 done
 
 # run execution engine grpc server
-./$SRC/CasperLabs/execution-engine/target/release/casperlabs-engine-grpc-server -t 8 $HOME/.casperlabs/.casper-node.sock&
+$SRC/CasperLabs/execution-engine/target/release/casperlabs-engine-grpc-server -t 8 $HOME/.casperlabs/.casper-node.sock&
 
 nodef init $1 --chain-id testnet
 
@@ -40,3 +40,4 @@ cp ~/git/friday-test/settings/manifest.toml ~/.nodef/config/
 SEED=$(cat ~/git/friday-test/settings/seed-address.txt)
 sed -i "s/seeds = \"\"/seeds = $SEED/g" ~/.nodef/config/config.toml
 
+./make-account.sh $1
