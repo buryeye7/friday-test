@@ -14,6 +14,7 @@ do
 			send \"$PW\\r\"
 		expect eof 
 		" | sed '/spawn/d' | sed '/confirm/d' | sed '/Password/d' | jq .) 
+		echo $res
 		txhash=$(echo $res | jq .txhash | sed 's/null//g')
 		code=$(echo $res | jq .code | sed 's/null//g')
 		echo $txhash $code
