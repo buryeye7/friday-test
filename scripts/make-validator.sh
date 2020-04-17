@@ -9,7 +9,7 @@ CN="testnet"
 clif hdac create-validator \
 --from $1 \
 --pubkey $(nodef tendermint show-validator) \
---moniker node2 \
+--moniker $1 \
 --chain-id $CN
 
 clif hdac bond \
