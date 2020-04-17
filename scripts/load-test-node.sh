@@ -7,13 +7,14 @@ do
 	do
 		echo $j
 		res=$(expect -c "
-		spawn clif hdac transfer-to friday1sqv4r0lw2t2fqdq5j3xfrt6lpktl35dlte8st0 1 0.01 30000000 --from node$j --chain-id testnet
+		spawn clif hdac transfer-to friday1sqv4r0lw2t2fqdq5j3xfrt6lpktl35dlte8st0 $i 0.01 30000000 --from node$j --chain-id testnet
 		expect "N]:"
 			send \"y\\r\"  
 		expect "\'node$j\':"
 			send \"$PW\\r\"
 		expect eof 
 		" | sed '/confirm/d' | sed '/Password/d' ) 
+		echo $res
 		echo "$res" | grep "txhash:"
 		echo "$res" | grep "code:"
 	done
