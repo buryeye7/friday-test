@@ -33,6 +33,12 @@ $SRC/CasperLabs/execution-engine/target/release/casperlabs-engine-grpc-server -t
 
 nodef init $1 --chain-id testnet
 
+# apply default clif configure
+clif config chain-id testnet
+clif config output json
+clif config indent true
+clif config trust-node true
+
 cp ~/git/friday-test/settings/genesis.json ~/.nodef/config/
 cp ~/git/friday-test/settings/manifest.toml ~/.nodef/config/
 SEED=$(cat ~/git/friday-test/settings/seed-address.txt)
