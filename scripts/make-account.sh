@@ -21,7 +21,7 @@ do
 	clif keys show node$i -a >> ~/git/friday-test/settings/$1-address.txt
 done
 
-git add $GIT/settings $GIT/scripts
+git add $GIT/settings $GIT/scripts $GIT
 git commit -m "settings scripts"
 git pull
 git push origin master
