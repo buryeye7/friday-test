@@ -23,4 +23,5 @@ done
 
 git add $GIT/settings $GIT/scripts
 git commit -m "settings scripts"
+git pull
 git push origin master
