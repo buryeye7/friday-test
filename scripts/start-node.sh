@@ -5,6 +5,8 @@ if [ $# == 0 ]; then
 	exit 0 
 fi
 
+git pull
+GIT="$HOME/git/friday-test"
 SRC="$HOME/go/src/github.com/hdac-io/friday"
 rm -rf ~/.nodef/config
 rm -rf ~/.nodef/data
