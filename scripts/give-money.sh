@@ -5,12 +5,12 @@ if [ $# == 0 ];then
 	exit 0
 fi 
 
-SRC_PATH="$HOME/git/friday-test/settings/$1-address.txt"
+DEST_PATH="$HOME/git/friday-test/settings/$1-address.txt"
 
 PW="12345678"
 i=1
 amount=100000000
-cat $SRC_PATH | while read line 
+cat $DEST_PATH | while read line 
 do
 	echo "i:" $i
 	echo "address:" $line
