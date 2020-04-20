@@ -1,5 +1,6 @@
 #!/bin/bash
 
+GIT=$HOME/git/friday-test
 PW="12345678"
 for i in {1..100}
 do 
@@ -19,3 +20,8 @@ for i in {1..100}
 do 
 	clif keys show node$i -a >> ~/git/friday-test/settings/$1-address.txt
 done
+
+git add $GIT/settings/$1-address.txt
+git commit -m "settings/$1-address.txt"
+git push origin master
+
