@@ -5,6 +5,8 @@
 #	exit 0 
 #fi
 
+git pull
+GIT="$HOME/git/firday-test"
 SRC="$HOME/go/src/github.com/hdac-io/friday"
 rm -rf ~/.nodef/config
 rm -rf ~/.nodef/data
@@ -81,4 +83,7 @@ cp ~/.nodef/config/genesis.json ~/git/friday-test/settings
 cp ~/.nodef/config/manifest.toml ~/git/friday-test/settings
 cat  ~/.nodef/config/genesis.json | jq .app_state.genutil.gentxs[0].value.memo > ~/git/friday-test/settings/seed-address.txt
 
+git add $GIT/settinags/seed-address.txt
+git commit -m "settinags/seed-address.txt"
+git push origin master
 
