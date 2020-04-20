@@ -84,7 +84,7 @@ cp ~/.nodef/config/genesis.json ~/git/friday-test/settings
 cp ~/.nodef/config/manifest.toml ~/git/friday-test/settings
 cat  ~/.nodef/config/genesis.json | jq .app_state.genutil.gentxs[0].value.memo > ~/git/friday-test/settings/seed-address.txt
 
-git add $GIT/settinags $GIT/scripts
+git add $GIT/settings $GIT/scripts $GIT
 git commit -m "settings scripts"
 git pull
 git push origin master

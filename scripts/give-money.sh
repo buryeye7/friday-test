@@ -5,6 +5,8 @@ if [ $# == 0 ];then
 	exit 0
 fi 
 
+git pull
+
 DEST_PATH="$HOME/git/friday-test/settings/$1-address.txt"
 
 PW="12345678"
