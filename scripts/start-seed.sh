@@ -37,6 +37,8 @@ $SRC/CasperLabs/execution-engine/target/release/casperlabs-engine-grpc-server -t
 # init node
 nodef init node1 --chain-id testnet
 
+sed -i "s/prometheus = false/prometheus = true/g" ~/.nodef/config/config.toml
+
 # copy execution engine chain configurations
 cp $SRC/x/executionlayer/resources/manifest.toml ~/.nodef/config
 
