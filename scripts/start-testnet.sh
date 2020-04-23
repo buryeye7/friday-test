@@ -5,6 +5,15 @@ if [ $# -eq 0 ];then
 	exit 0
 fi
 
+ps -ef | grep tendermint | while read line
+do
+	if [ "$line" != *"grep"* ];then
+		echo "line" $line
+		pid=$(echo $line | awk -F' ' '{print $2}')
+		kill -9 $pid
+	fi
+done 
+
 rm -rf mytestnet
 tendermint testnet
 
