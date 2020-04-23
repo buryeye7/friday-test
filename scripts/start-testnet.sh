@@ -14,9 +14,9 @@ do
 	fi
 done 
 
-rm -rf mytestnet
 
 if [ $1 == 0 ];then
+	rm -rf mytestnet
 	tendermint testnet
 	git add mytestnet
 	git commit -m "."
