@@ -39,4 +39,4 @@ IP1="140.238.17.132"
 IP2="150.136.254.253"
 IP3="158.101.114.4"
 
-tendermint node --home ./mytestnet/node$1 --proxy_app=kvstore --p2p.persistent_peers=$ID0@$IP0:26656,$ID1@$IP1:26656,$ID2@$IP2:26656,$ID3@IP3:26656
+tendermint node --home ./mytestnet/node$1 --proxy_app=kvstore --p2p.persistent_peers=$ID0@$IP0:26656,$ID1@$IP1:26656,$ID2@$IP2:26656,$ID3@$IP3:26656
