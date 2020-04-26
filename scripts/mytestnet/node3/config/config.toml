@@ -161,7 +161,7 @@ external_address = ""
 seeds = ""
 
 # Comma separated list of nodes to keep persistent connections to
-persistent_peers = "829c3fc4b520f28d1432fbe6cf06e7f29df7f1ea@node0:26656,90ee4d75d1e8449e78b12c06c80468e4de3156e2@node1:26656,fac83ecf46f43be196948ae1e688d88ac98e8515@node2:26656,4e4b35938501304f54a790ead55e5ab814a75675@node3:26656"
+persistent_peers = "739a744fe9274585b0f0c699a8ade56f5e47dd2f@node0:26656,e20a58878e02ac65e1cc0129899f1d01fde205b3@node1:26656,7d603684f122e0656c2ccef0da866c1019083f3b@node2:26656,bb8d2c9bf5427321ec0376ec7f26a7b14ca8f896@node3:26656"
 
 # UPNP port forwarding
 upnp = false
@@ -240,10 +240,21 @@ max_tx_bytes = 1048576
 #   2) "v1" - refactor of v0 version for better testability
 version = "v0"
 
+# Fast Sync pool version to use:
+#   1) "tendermint" (default) - the default fast sync implementation
+#   2) "friday" - the customize implementation for friday consensus
+pool_version = "friday"
+
 ##### consensus configuration options #####
 [consensus]
 
+# Consensus version to use:
+#   1) "tendermint" (default) - the default consensus implementation
+#   2) "friday" - the friday consensus implementation 
+version = "friday"
+
 wal_file = "data/cs.wal/wal"
+
 
 timeout_propose = "3s"
 timeout_propose_delta = "500ms"
