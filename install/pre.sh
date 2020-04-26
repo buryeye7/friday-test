@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 wget https://dl.google.com/go/go1.13.linux-amd64.tar.gz
 sha256sum go1.13.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.13.linux-amd64.tar.gz
@@ -28,3 +28,5 @@ go get github.com/hdac-io/friday
 cd /home/opc/go/src/github.com/hdac-io/friday
 sudo npm install -g assemblyscript@0.9.1
 make install
+sudo systemctl stop firewall
+sudo systemctl disable firewalld
