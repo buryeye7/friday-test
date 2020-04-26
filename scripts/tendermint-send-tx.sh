@@ -1,8 +1,8 @@
 #!/bin/bash
 
 rm diff.txt
-i=10000000000
-count=10000
+i=10000
+count=1000000000000
 end=$((i + count))
 while [ $i -lt $end ]
 do
