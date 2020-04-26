@@ -161,7 +161,7 @@ external_address = ""
 seeds = ""
 
 # Comma separated list of nodes to keep persistent connections to
-persistent_peers = "24cd1902bbcb939118c2d69fc28027e7347a8a82@node0:26656,eb34247c0e1d690591c523f2f171a2eee1dbf1b8@node1:26656,09ebf509034fe687ac93752cb78a4c4337474d41@node2:26656,ca21b0ff88cfd74691afa3590c4fc3e2f46f2a30@node3:26656"
+persistent_peers = "3d4f6a8bae255920024af8c25175ebef5b9845b1@node0:26656,b56ccf5f1238c89b9b1d73a4f5361b40fca85a68@node1:26656,d3d1354d91939334f1798dcf87d9f83372e47228@node2:26656,d1856b6fd12c9d8a7c0b09dadfe4d24f79262ab6@node3:26656"
 
 # UPNP port forwarding
 upnp = false
