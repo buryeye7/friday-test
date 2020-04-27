@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2020-04-22T06:37:58.184131346Z",
+  "genesis_time": "2020-04-27T04:31:53.621849201Z",
   "chain_id": "testnet",
   "consensus_params": {
     "block": {
@@ -18,7 +18,45 @@
   },
   "app_hash": "",
   "app_state": {
+    "distribution": {
+      "fee_pool": {
+        "community_pool": []
+      },
+      "community_tax": "0.020000000000000000",
+      "base_proposer_reward": "0.010000000000000000",
+      "bonus_proposer_reward": "0.040000000000000000",
+      "withdraw_addr_enabled": true,
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "bank": {
+      "send_enabled": true
+    },
+    "crisis": {
+      "constant_fee": {
+        "denom": "stake",
+        "amount": "1000"
+      }
+    },
     "params": null,
+    "auth": {
+      "params": {
+        "max_memo_characters": "256",
+        "tx_sig_limit": "7",
+        "tx_size_cost_per_byte": "10",
+        "sig_verify_cost_ed25519": "590",
+        "sig_verify_cost_secp256k1": "1000"
+      }
+    },
+    "nickname": {
+      "accountarr": []
+    },
     "genutil": {
       "gentxs": [
         {
@@ -40,9 +78,9 @@
                     "max_change_rate": "0.010000000000000000"
                   },
                   "min_self_delegation": "1",
-                  "delegator_address": "friday1m80cfxy7w6wt8xvvwl08579hkvxxjdf9w4074d",
-                  "validator_address": "fridayvaloper1m80cfxy7w6wt8xvvwl08579hkvxxjdf9mpsks9",
-                  "pubkey": "fridayvalconspub16jrl8jvqq9v4wt6w2d2ygn3ctpn9x3tzd4nk6d6wx4hk74z09d2kyufn2darz3th0fvkwm2tf4q4yctngghnset4d4d9jcfs2aeys522w3a8sk2xgecxvwz88pgyza250fdrg7f3dqukcv3ctpe4jse5danhvk26gfnrq7zd0955ykfnx39hs4jsf489gvj5w9f5u4mjtf8xzdrcfpv56nch8fajm",
+                  "delegator_address": "friday1euhl23m9qahlcxryzs0j5hkahphve2ad2pmr8a",
+                  "validator_address": "fridayvaloper1euhl23m9qahlcxryzs0j5hkahphve2adl4ytz4",
+                  "pubkey": "fridayvalconspub16jrl8jvqq925janzdyhkvdfjv4py7320ggexzs65g35hg43hxe9nqjndf35xgnntg9ckkc2pwp956j2ndarnw72e899kvm64vet9s6js899nye6v09rrw62cwdj8x42jvvekx4jefp6h54ejgehyg6mv89fx2e63wsey5ctv2ary5c2ef9a8vut5we99gmt0xf29wuttdpnxscme2p3ykjq72lke9",
                   "value": {
                     "denom": "stake",
                     "amount": "100000000"
@@ -52,8 +90,8 @@
               {
                 "type": "executionengine/CreateValidator",
                 "value": {
-                  "validator_address": "friday1m80cfxy7w6wt8xvvwl08579hkvxxjdf9w4074d",
-                  "cons_pubkey": "fridayvalconspub16jrl8jvqq9v4wt6w2d2ygn3ctpn9x3tzd4nk6d6wx4hk74z09d2kyufn2darz3th0fvkwm2tf4q4yctngghnset4d4d9jcfs2aeys522w3a8sk2xgecxvwz88pgyza250fdrg7f3dqukcv3ctpe4jse5danhvk26gfnrq7zd0955ykfnx39hs4jsf489gvj5w9f5u4mjtf8xzdrcfpv56nch8fajm",
+                  "validator_address": "friday1euhl23m9qahlcxryzs0j5hkahphve2ad2pmr8a",
+                  "cons_pubkey": "fridayvalconspub16jrl8jvqq925janzdyhkvdfjv4py7320ggexzs65g35hg43hxe9nqjndf35xgnntg9ckkc2pwp956j2ndarnw72e899kvm64vet9s6js899nye6v09rrw62cwdj8x42jvvekx4jefp6h54ejgehyg6mv89fx2e63wsey5ctv2ary5c2ef9a8vut5we99gmt0xf29wuttdpnxscme2p3ykjq72lke9",
                   "description": {
                     "moniker": "node1",
                     "identity": "",
@@ -71,32 +109,15 @@
               {
                 "pub_key": {
                   "type": "tendermint/PubKeySecp256k1",
-                  "value": "A/uzhOWehB9cA5cH4HDvUrJbCLA2qFTK8jmJ/tp0SSFg"
+                  "value": "AzW3uIwoQ0wJXwFVG3+P5lfbYoQMrrp7izuLSSKxH9d1"
                 },
-                "signature": "K9jj5qJd1UvbQWCFzsaxnV2t0YOT1FnjZnJpZkb19/lFa+imc7PnnxrpVRRSXSKtWniX5/+FWquyKq4fp6bsCQ=="
+                "signature": "aRhqWKdmcVBH7wptTss3Cfis4vlfjt+RKPOwDv9XoM0s1vDjMk1VVvzozBpSgYwtyUUQQlmS2F2CWpoNfbqHNQ=="
               }
             ],
-            "memo": "6ef38d801716096bfa8d135c998502b083b5e063@10.0.0.24:26656"
+            "memo": "f1b42ef5eecc9f7a8670050b334b705fec76372e@10.0.0.7:26656"
           }
         }
       ]
-    },
-    "distribution": {
-      "fee_pool": {
-        "community_pool": []
-      },
-      "community_tax": "0.020000000000000000",
-      "base_proposer_reward": "0.010000000000000000",
-      "bonus_proposer_reward": "0.040000000000000000",
-      "withdraw_addr_enabled": true,
-      "delegator_withdraw_infos": [],
-      "previous_proposer": "",
-      "outstanding_rewards": [],
-      "validator_accumulated_commissions": [],
-      "validator_historical_rewards": [],
-      "validator_current_rewards": [],
-      "delegator_starting_infos": [],
-      "validator_slash_events": []
     },
     "gov": {
       "starting_proposal_id": "1",
@@ -121,12 +142,2052 @@
         "veto": "0.334000000000000000"
       }
     },
+    "slashing": {
+      "params": {
+        "max_evidence_age": "120000000000",
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600000000000",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": {},
+      "missed_blocks": {}
+    },
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400000000000",
+        "max_validators": 100,
+        "max_entries": 7,
+        "bond_denom": "stake"
+      },
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
+    },
+    "mint": {
+      "minter": {
+        "inflation": "0.130000000000000000",
+        "annual_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "stake",
+        "inflation_rate_change": "0.130000000000000000",
+        "inflation_max": "0.200000000000000000",
+        "inflation_min": "0.070000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "6311520"
+      }
+    },
     "supply": {
       "supply": []
     },
-    "bank": {
-      "send_enabled": true
-    },
+    "accounts": [
+      {
+        "address": "friday1euhl23m9qahlcxryzs0j5hkahphve2ad2pmr8a",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday15s6fx6kkmeh5ug353c44kznz6fq6lzsksdztfr",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday12f6ww3cy0rerw6ka7ukhqlvnxz3n94p32e6y9x",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1nvvxf0ep22qnyamnrn3rqfm252u0p0tnu2amc0",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1rl9eej0y96xe0kdllw8yc9zfdc4v83j4ywgdlk",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1gerus7vf4tmkfw4smy086tqaffjnnuaj32tsuy",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1928aumgmwcc2c2gdhct08z55t4724jqt65aykh",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday13f365p68j44usz6tmpw80gptvvzulktfg6896a",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday14e3xc0vghnxvgkz4nt9v238a9yy3xs3tgmwc5j",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday15d66qa9q49syql0erl9w80lhpypgecn8t8fgmh",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday123vaz2dg9ygzemvle5tktv4938aw5sa6ahsjc7",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1fqpnnt3k2rktlwm5lyplngxkllmnuaq4z8rudt",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1jpp6qr4ekj03at7tvr43y0el3z45qq66stcfy4",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1xt8vvtunupc20wt74xrgkgpg8efyq6phc7cwu2",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1hycewwpuntf0f5le49q7y46qkuquqgv890frda",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1cj977drmwxr8629hgxsz0cggsutemhvre9c27y",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1ux75ffcgpnryl0v229ma7qumutp0yctlswmtal",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1ew5y5f0m4jpd4mm8u7l9l33k5957gt22rkehu2",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1edf9elnvtwvulnguej0ney0dk3pyr92ag53flx",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday13eepgxgz4j0g54jl3eqsw90rtxv2uyde8v0ngf",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1el4jaqq9n79et20ukf3tdptc3kanx6j8cjx3gp",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1anx9jqsnut24hzcgdyzh9p6kamx77krfkm2hx8",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1f2q7rpmy3fgn5hnny7smhy4fvwfs6038ul55at",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1zvg276x0n8c6l9fnglhdj4c6s6rclkndmjemes",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1ey4uddgweu2mhvrcvkvflp3df4lhyreyc2k0uu",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday19vx2al7hmfw4ft603qy9nuz3ufmdyrmj2lhlvw",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday19slm9g9slakmgrn2jlcmwdv3usmnsv8fl09t7f",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1n8evaur5w6sz99erl3vdvx5a4vuwsmch3em0tw",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1p9nsf5euqau7atyxnfzrk3gehuvxg7fvnahdmq",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1ky4r9l0w5lnd42ethyjs9spwg976gv2kda6c56",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday152qfga53w0rkpalkpk6sg32duj49c7n2dt903m",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday15zxqzfer63hx2facqk6neuf8pkszaeern9tk7w",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1mluaxxvsq94yr7qazf4jntfqsrl725z9qfz5p2",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday18ms6uxnpw3r5dlt20znczdsf4zyg5gav9dzrlt",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1hceqw2afmvl5mxwaqqsvh9vum8c29lpzx4etv4",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday18y7lyuykfqr52jlvhfhpx2008nuxajvg4vk9qd",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1jq8asx23uazpx6j7e7cwxwgkxzjfyg4ezgynmn",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday10058gte55u455wg4ayqktha3xjl88dueqvfaz3",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1w2h76umlqhrqyz77ynjszge0flwjuqw30vxtxm",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1jrsmm2anhmw9epdap3wkdraf6l9g6kgtggztxv",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1r2wuflf0xwjfalzkds2y8eetpq2kqg6zlgmm88",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday19tacqd4fzluhvk5n76kfe4fw2dj8adjzgcpyxx",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1ech225udp06urjwgndm8p4nkengcx34vydyfmx",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday17yaaalncmj3a7fxgj8strs297207p3fgmwa4jk",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday19k767h8sjyz9hc8lw99fj8gkd4k32zeas9nw0m",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1uss4m4z5j3sz9myu4s2xu6y6729qn8lkjyw6rx",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday177qszladx38wmrpa0n6wat0xeyyn8p3jnnrtaw",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday12c3wga43uvqzsktnzlr8svxg8hjal2lffacq6d",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1krgrleppqxkgetmu5puwq98h7274yq5k54sxk0",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday16l7p0kxe6cf5lw0n3n7t3vmfuwyrktuuzu6np8",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1hq4rdgyxlyy8vw7pq2escq07ay44xydg0dfuez",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1shf5xaz8e5sm629fam7pgw7aq2drn9mqnktvaq",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1dw664w98yz8cx95qnatsq0uuhjz83cyjk3wpse",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1g75sngftdzg82ljx7sz5k7tdxtx7f70qxxsag6",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1gdjqhayrgmglkjwjl4r53jvumrar5qsg6vurfe",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1tjzptzkmlp7wld9u3r75jnzuwn3ap2m3600nmk",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1dcl0ftxj8hgxy4qj8k7m55v867yg0rmk34qsnq",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1tx9v3tn3yc9uwd2rmhem76xtnzjwqr4ewx5cgm",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday134fmdydsd0je4cm62wn5wct6hcf2avrqlye6t0",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday17226gsyarlusaylhrh48ygpa8d5ccw9gd9kmk0",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1wjtwa6n0lcwx7dgl5adfhsl0rdpngyghqh98u3",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1a2e637j4j5ye40jcy6ecyrl2wngelqw3g66yfa",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1ak9866fuvlhfafy6vwyns9ah49gg0mmwgwyvkg",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1ge8hgj3p0dv6c3g0a5rl0yxe7dlu08yfll83v3",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1lzf45hrz4k8k3pgmmpr27ftjh55er5u05s9qgg",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1a83e6jgn7qy6se72hpctjtd0el2d06vucpqlq3",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1fxfp52885wchmhp4wqjs5vm9mr7zk4wfmdnym2",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1cxk7ta2ljrz9hjyqng5p9a92gw8k5ewlkdz8t6",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1tpdgtu2wpz7vlthl4r87e6enxncd50m9n92nwu",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday183hqgykq84mwynh67zy36d32qhqjxn30tpprwy",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1k30z4zge2g6znt0smnvj5k3t2c0ec2vfkgpx27",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1x5cskzlq9z8a9tpm9cvwea8eweedcfsjdlw22t",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1yedg8hnwd6chm9pw6yzcp679skpf9aygnnrt69",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1ew3pv2zhyzruv4kltfm80krlayet2rgm87ehxt",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1camjdsauf7l3hftp66gs03txmwr8jvgr84dfpv",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1655868h4kewt3u99gh3la9tuh90q3qx9szknh6",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday19fvmsmvn0qeu362n5lyqjp2lpumw6fheevy7v4",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday19g0wshhunp5k7g4lj3xjlqdhy3jkksr6npyn62",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday17h4s4sgdacg5adl77yukslasd8a3hnxce3yd3r",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1r9t7s34n2vq55cfxscx4de32t0fmj9qnlznm5z",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday18pamfcsk940j08dh8a7rcqs88ya5c2eq9x379s",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1ywsjr9ja0ffar7jdp79ykrvg6g9m875g62y35p",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1cv7hpjwx65umzvy79gx79nll28gky6nurckgwl",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday185a2pxqgst5eydsps30tgxw4gjur7aevgh7fer",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1f7nljmxa2xh83l24jzzsvvkpv92w2w6zv2zmnn",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday16l2m25knccy9rnuucam8gsaxeqhl5lcmdre95q",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1j6lzyn5p0l0x3wkavpct025frgrar4tvzkv35p",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1y2vdum9duzmuklgt2twx3rln2yf3s8kc7aq3w2",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1uqps52luekwv3e2tn74549dtvawg7yadwqzqw2",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1a4r5sgtgpayy9vwa7t6frapl2dh4vhleu8qkj8",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1tda5m3gwasup4f9kv09q06h5nyvajafxykfnf4",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1nk34kt094plsd3c6jyt7rp6wlq5ha0zhvfdaft",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday107sr95c29pfh0s60ul9js8r8uxtvtk8g67dsvv",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1jwm9qq8dgk9469gxrgzhejgjasw8y2ysxd72w9",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1v5chfcfn2fgwjhutrf2urk0kxwk6487h9hgxxg",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1376wy6re5ayghgrkd60z2mrwapdsdkd3dvkf36",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1773scs57h0p9aavld7zj2x9az55hgz3gt8aygh",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1u3456p4kjyvt6lh6fg7xps5rhzhkfpfhllu34g",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday1w9e7872eyl587f6hs3wfpkp55z9u0wl6fy8lpq",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      },
+      {
+        "address": "friday10776dajv9cz5g3qgz5ghtlmt4uywylq4w6u0jj",
+        "coins": [
+          {
+            "denom": "stake",
+            "amount": "100000000"
+          }
+        ],
+        "sequence_number": "0",
+        "account_number": "0",
+        "original_vesting": [],
+        "delegated_free": [],
+        "delegated_vesting": [],
+        "start_time": "0",
+        "end_time": "0",
+        "module_name": "",
+        "module_permissions": [
+          ""
+        ]
+      }
+    ],
     "contract": {
       "genesis_conf": {
         "genesis": {
@@ -154,2568 +2215,507 @@
       },
       "accounts": [
         {
-          "address": "friday1m80cfxy7w6wt8xvvwl08579hkvxxjdf9w4074d",
+          "address": "friday1euhl23m9qahlcxryzs0j5hkahphve2ad2pmr8a",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1s8zucqwzxkkngvvqcp9lej4d9rn27pfyqdg2el",
+          "address": "friday15s6fx6kkmeh5ug353c44kznz6fq6lzsksdztfr",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1qy2fuf6hg9nnmd34wgrqw7pryfun9yvawd8r44",
+          "address": "friday12f6ww3cy0rerw6ka7ukhqlvnxz3n94p32e6y9x",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1fjkuluc3jyve3wju05jfp974wfwkjqcvrhfq8z",
+          "address": "friday1nvvxf0ep22qnyamnrn3rqfm252u0p0tnu2amc0",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday183um9vvufpg2ca92vdjj9h62ynntasp54rmjra",
+          "address": "friday1rl9eej0y96xe0kdllw8yc9zfdc4v83j4ywgdlk",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1ayl50atsjpal6dmxqyrr7q5gh8grd5zk3stetr",
+          "address": "friday1gerus7vf4tmkfw4smy086tqaffjnnuaj32tsuy",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1dwptsyzqfa9qsrm0k62z73p6dykmkfhgajfxyy",
+          "address": "friday1928aumgmwcc2c2gdhct08z55t4724jqt65aykh",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1wj89qyws9tfyq8dvkg2rpvyv57rwgv2xplkf2r",
+          "address": "friday13f365p68j44usz6tmpw80gptvvzulktfg6896a",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1y2qa4g6jn8tjrennf59ljxpde6m9lf25n0c004",
+          "address": "friday14e3xc0vghnxvgkz4nt9v238a9yy3xs3tgmwc5j",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday12u65ty273204d7wn63ur0yh7zkege7g9xp7ms5",
+          "address": "friday15d66qa9q49syql0erl9w80lhpypgecn8t8fgmh",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1d8yj7vqhuye7uqwdkq929ws43a3t2dghaxht07",
+          "address": "friday123vaz2dg9ygzemvle5tktv4938aw5sa6ahsjc7",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday146k5rwa6vx36alt038zavnfjc7muktrudtug2h",
+          "address": "friday1fqpnnt3k2rktlwm5lyplngxkllmnuaq4z8rudt",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday19jf40trw8w92uzeywg9hfu25lejx908tpa2sef",
+          "address": "friday1jpp6qr4ekj03at7tvr43y0el3z45qq66stcfy4",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday13wa54yadppu5xnd56leaf9t6gckqcd8r7dql6a",
+          "address": "friday1xt8vvtunupc20wt74xrgkgpg8efyq6phc7cwu2",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday12nqzjaxhsshymufqkdvq9yjyl5fc0fk5t8d37j",
+          "address": "friday1hycewwpuntf0f5le49q7y46qkuquqgv890frda",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday19nedwdus3msyujc3za2nrc3qvfps26r4n3rlff",
+          "address": "friday1cj977drmwxr8629hgxsz0cggsutemhvre9c27y",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1m5natfyfr8t673g34ahmz0ywywfnajmsk6rqss",
+          "address": "friday1ux75ffcgpnryl0v229ma7qumutp0yctlswmtal",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1cul854ksatypm93vs5j4t5h7sh3uguv5664ry0",
+          "address": "friday1ew5y5f0m4jpd4mm8u7l9l33k5957gt22rkehu2",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1ng68qjj385df5efp2s5p2zz7mwv23nk30ef99z",
+          "address": "friday1edf9elnvtwvulnguej0ney0dk3pyr92ag53flx",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1aavrmn3shhgq6m57t7wcju3npqw6wyucvvml9h",
+          "address": "friday13eepgxgz4j0g54jl3eqsw90rtxv2uyde8v0ngf",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1ddv0knlxvevqw43lfmzc3xg6gsaq8tgwx3jz3u",
+          "address": "friday1el4jaqq9n79et20ukf3tdptc3kanx6j8cjx3gp",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1d4cmfvts0e525ptj32e774r6fpha0g77n0fl2g",
+          "address": "friday1anx9jqsnut24hzcgdyzh9p6kamx77krfkm2hx8",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday12zy7zeea7gk68usgp5esve5dzetwnnvyawypv8",
+          "address": "friday1f2q7rpmy3fgn5hnny7smhy4fvwfs6038ul55at",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday10y0u7kdg9yuvp8eyukkqyk7xecv842352tw8lg",
+          "address": "friday1zvg276x0n8c6l9fnglhdj4c6s6rclkndmjemes",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1hgsfwv2qtdyvxy6l4cj733zqz2hlshkk7r0qwu",
+          "address": "friday1ey4uddgweu2mhvrcvkvflp3df4lhyreyc2k0uu",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday18jvzvemygjusllwua058typqy3uc4y857hlkea",
+          "address": "friday19vx2al7hmfw4ft603qy9nuz3ufmdyrmj2lhlvw",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1m3wjg2ueve9u9c4mdjxggamxqaxv706quq36gp",
+          "address": "friday19slm9g9slakmgrn2jlcmwdv3usmnsv8fl09t7f",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1zg4q5p58578tng99tg8zj2w992g8r4szje6ue2",
+          "address": "friday1n8evaur5w6sz99erl3vdvx5a4vuwsmch3em0tw",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday185kke5enpu7pltttda94xgve62uncm5aa7jze6",
+          "address": "friday1p9nsf5euqau7atyxnfzrk3gehuvxg7fvnahdmq",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1p8vuc5ps3smspqz4jv2d3zswmz7evav0fhpuph",
+          "address": "friday1ky4r9l0w5lnd42ethyjs9spwg976gv2kda6c56",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1ud4ln3e4kf2fuprxp4ww3vwcm8ekhxjf03s3vu",
+          "address": "friday152qfga53w0rkpalkpk6sg32duj49c7n2dt903m",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1uqxvlpwnrr6k4vrjz3xyuvzdk2msgwypgn6pfn",
+          "address": "friday15zxqzfer63hx2facqk6neuf8pkszaeern9tk7w",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1kp6vkkx228kc3jp8rw86pkz4yk2xn7r6yd3lz0",
+          "address": "friday1mluaxxvsq94yr7qazf4jntfqsrl725z9qfz5p2",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1d907nsg3nc28e3x2t5n5gs09dvnzegjulf7eja",
+          "address": "friday18ms6uxnpw3r5dlt20znczdsf4zyg5gav9dzrlt",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1mcke8r52cu4tnvase4q6yd0evu2ala0hq80hj5",
+          "address": "friday1hceqw2afmvl5mxwaqqsvh9vum8c29lpzx4etv4",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1fck93u37y3twpz6t24v8ze5alpuqr54txh4evz",
+          "address": "friday18y7lyuykfqr52jlvhfhpx2008nuxajvg4vk9qd",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1qtc5ak2kptexyd2500xrdleqxtwc2h8582vflt",
+          "address": "friday1jq8asx23uazpx6j7e7cwxwgkxzjfyg4ezgynmn",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1q2jjea2t6l4fd36cudsh7sjxel5cqp0mpvnszq",
+          "address": "friday10058gte55u455wg4ayqktha3xjl88dueqvfaz3",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1l983z7nta9uvv9e9e9n2ksaw6aedt8hdgpukr6",
+          "address": "friday1w2h76umlqhrqyz77ynjszge0flwjuqw30vxtxm",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1ah0dn2s37cvxu7d8dxsh69hae3xklrswexuhcq",
+          "address": "friday1jrsmm2anhmw9epdap3wkdraf6l9g6kgtggztxv",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1tq3paz0x4qn7f43aelmx4ep0exn2lq3hwtcdra",
+          "address": "friday1r2wuflf0xwjfalzkds2y8eetpq2kqg6zlgmm88",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday10rwurq92aattsuuuaf2g7xttyxee9uccxagvl3",
+          "address": "friday19tacqd4fzluhvk5n76kfe4fw2dj8adjzgcpyxx",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday173eg50jpwhdjszpgduxgdxs77k4ph79uqt399p",
+          "address": "friday1ech225udp06urjwgndm8p4nkengcx34vydyfmx",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1ashg0dklun8g5c8zly4kfs7q9cwp36xjdm3jcn",
+          "address": "friday17yaaalncmj3a7fxgj8strs297207p3fgmwa4jk",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1shc2ajs5dpf84ef53hlgyh6d5rzyygsu4fms38",
+          "address": "friday19k767h8sjyz9hc8lw99fj8gkd4k32zeas9nw0m",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1zd80jr38emvg0u0tt7yskux8fylzgvdzrm84tv",
+          "address": "friday1uss4m4z5j3sz9myu4s2xu6y6729qn8lkjyw6rx",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1ar66ux4fzwcujpc72wwuswut8wjdr829mhr5gs",
+          "address": "friday177qszladx38wmrpa0n6wat0xeyyn8p3jnnrtaw",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday10cchd06d209j3gk9ya3gssgwnm5kmuy3pruxvq",
+          "address": "friday12c3wga43uvqzsktnzlr8svxg8hjal2lffacq6d",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1ghvwcdhr08apdfzhr5lt8j29kzlkmd984fhtku",
+          "address": "friday1krgrleppqxkgetmu5puwq98h7274yq5k54sxk0",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday17f7kq7srykl7dnjyd2ntlllu2xpcd6tdzkmdxl",
+          "address": "friday16l7p0kxe6cf5lw0n3n7t3vmfuwyrktuuzu6np8",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1lhrmezwl95cwh4n62qyz998fz8thnslj7vze3d",
+          "address": "friday1hq4rdgyxlyy8vw7pq2escq07ay44xydg0dfuez",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1a7fnwlc59xeh6suswjvwa2s40j07casg7x5hu4",
+          "address": "friday1shf5xaz8e5sm629fam7pgw7aq2drn9mqnktvaq",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1wr73ggsl9zqtkupttfzmvk6dcztj20f7daqs8u",
+          "address": "friday1dw664w98yz8cx95qnatsq0uuhjz83cyjk3wpse",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1rhv7q5pre32nzv7pjcrrkxvm6dhaek04g2jut8",
+          "address": "friday1g75sngftdzg82ljx7sz5k7tdxtx7f70qxxsag6",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1catw4yz8h98j0c2ju77c6l8qg7czfkn0lkcjpr",
+          "address": "friday1gdjqhayrgmglkjwjl4r53jvumrar5qsg6vurfe",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1v3tdk9exgdzvu6mtk6w5kqq6ny6jtfd378hpwa",
+          "address": "friday1tjzptzkmlp7wld9u3r75jnzuwn3ap2m3600nmk",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1cfnguvrg0m6qm5uvx2nny5pr4yq7j57dasw07l",
+          "address": "friday1dcl0ftxj8hgxy4qj8k7m55v867yg0rmk34qsnq",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday193czu2vr4m5p27q0h3v0xqdysee0j2rqwjg9ks",
+          "address": "friday1tx9v3tn3yc9uwd2rmhem76xtnzjwqr4ewx5cgm",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1l0ux58ex8x753ysp2wkk8ncrwanedx3fep8hx0",
+          "address": "friday134fmdydsd0je4cm62wn5wct6hcf2avrqlye6t0",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1mrxv6wcgkavpekwh96tu749efqhg32h6zwt0gr",
+          "address": "friday17226gsyarlusaylhrh48ygpa8d5ccw9gd9kmk0",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1xuuuu48tk9ax60xg4slpvk8p3rlpd9xjz3zu9u",
+          "address": "friday1wjtwa6n0lcwx7dgl5adfhsl0rdpngyghqh98u3",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1nwmuay4v2d4r5q9dhdjfhw7t93e775nzcgkp6z",
+          "address": "friday1a2e637j4j5ye40jcy6ecyrl2wngelqw3g66yfa",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1qfzsmt5vmwaasuxga6ezgd7qp3ftwlljem0h5e",
+          "address": "friday1ak9866fuvlhfafy6vwyns9ah49gg0mmwgwyvkg",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday16gpwwya3sduz6ak8l2xvlk24nan3wx3wllv4fl",
+          "address": "friday1ge8hgj3p0dv6c3g0a5rl0yxe7dlu08yfll83v3",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1qqkp2z6a5ry30ppkn0uhj43lttdd7cd4au6jua",
+          "address": "friday1lzf45hrz4k8k3pgmmpr27ftjh55er5u05s9qgg",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday13zrsxt7aq6cs8nakqnz43qrnlcvjrrwwjwcw6h",
+          "address": "friday1a83e6jgn7qy6se72hpctjtd0el2d06vucpqlq3",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1f637x60kwvlwq47xfudjtjg5zjve2x7jpyfwqn",
+          "address": "friday1fxfp52885wchmhp4wqjs5vm9mr7zk4wfmdnym2",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1fdqh9zxe733s6cqxvvylekecmy5ktrqamf4uf5",
+          "address": "friday1cxk7ta2ljrz9hjyqng5p9a92gw8k5ewlkdz8t6",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1u0fznf6gsv3ykze559xmjj3s0dkkdf3qfrf6dj",
+          "address": "friday1tpdgtu2wpz7vlthl4r87e6enxncd50m9n92nwu",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday18u3gc3kmppt49ww5dr2c368gjeh05flysu74dj",
+          "address": "friday183hqgykq84mwynh67zy36d32qhqjxn30tpprwy",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday17r6t5kvakwxs0acje0x0vc7pm9m030f4vxmmee",
+          "address": "friday1k30z4zge2g6znt0smnvj5k3t2c0ec2vfkgpx27",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1luevd06dlyg55s6s299g24v6ccexrqsd8j4x7e",
+          "address": "friday1x5cskzlq9z8a9tpm9cvwea8eweedcfsjdlw22t",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1c3rwdtdac2q2y2tgjzt6cwfkcnpkev6vs2mdqx",
+          "address": "friday1yedg8hnwd6chm9pw6yzcp679skpf9aygnnrt69",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday16j2gp6mag9an8nh5qsr4dcgr9wfjc9mruvsr97",
+          "address": "friday1ew3pv2zhyzruv4kltfm80krlayet2rgm87ehxt",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1nfp67ey9ezk94n433xczhw7styhpe09apl85ux",
+          "address": "friday1camjdsauf7l3hftp66gs03txmwr8jvgr84dfpv",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1lxqwnkp9km5wt0ec87gndqxthh5qvld6f33mx8",
+          "address": "friday1655868h4kewt3u99gh3la9tuh90q3qx9szknh6",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday13n28r3cylqxe64xdsfmcn94048ehe0xg36mycj",
+          "address": "friday19fvmsmvn0qeu362n5lyqjp2lpumw6fheevy7v4",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday12zthjrgl4ewxlyxhrq3svcy8fpr8xnea86vwhs",
+          "address": "friday19g0wshhunp5k7g4lj3xjlqdhy3jkksr6npyn62",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1d85duvvd920rx290paf8xznlr4l5tcv2ws67ep",
+          "address": "friday17h4s4sgdacg5adl77yukslasd8a3hnxce3yd3r",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday12uwxh3jteam7wkmq2wgc8m3wz8r2rd09aevv05",
+          "address": "friday1r9t7s34n2vq55cfxscx4de32t0fmj9qnlznm5z",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday15779eayjm8en60fjxw6t5zpwrr9ps6spj7nfhu",
+          "address": "friday18pamfcsk940j08dh8a7rcqs88ya5c2eq9x379s",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday14t50a4hgxdzrvsr0hv0h7w08maj2trjdakcfvl",
+          "address": "friday1ywsjr9ja0ffar7jdp79ykrvg6g9m875g62y35p",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1gvnutrv2e8huywvynnp24tnuqrkaczkp9ez7r0",
+          "address": "friday1cv7hpjwx65umzvy79gx79nll28gky6nurckgwl",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1xcayrka6f2lqjde7rfy03x3n05t7vta9jyzkh4",
+          "address": "friday185a2pxqgst5eydsps30tgxw4gjur7aevgh7fer",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday12eh8g2r9vwluaxcvuqlxfs3xy8wwgdvzzrra7t",
+          "address": "friday1f7nljmxa2xh83l24jzzsvvkpv92w2w6zv2zmnn",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday16hjrljzgccz33petrk0qlm3e44d4e5u6grx3jw",
+          "address": "friday16l2m25knccy9rnuucam8gsaxeqhl5lcmdre95q",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1gzwlqda65kwq2ns6uza0ju3kttq4k09fa6jks9",
+          "address": "friday1j6lzyn5p0l0x3wkavpct025frgrar4tvzkv35p",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday19hd9k3qv8kx9ezaz5y9a0exqpryku2lh5q48km",
+          "address": "friday1y2vdum9duzmuklgt2twx3rln2yf3s8kc7aq3w2",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1nh0c7f2wjd983cc9v8ejs7f3fzha7fu5xp52v8",
+          "address": "friday1uqps52luekwv3e2tn74549dtvawg7yadwqzqw2",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1ps6w8pse5mfkx7ugwnncgfnmtggl4fl6yhxsta",
+          "address": "friday1a4r5sgtgpayy9vwa7t6frapl2dh4vhleu8qkj8",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1dtwdu0002yhekgqm45kmv74m7ghzngprkz430s",
+          "address": "friday1tda5m3gwasup4f9kv09q06h5nyvajafxykfnf4",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1czzp3k9wctf7sgpkyshuxwydhvwx5tz4d38dam",
+          "address": "friday1nk34kt094plsd3c6jyt7rp6wlq5ha0zhvfdaft",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1c48usr0f3xq0g9kz757a9xsfnmudppw8qa92sw",
+          "address": "friday107sr95c29pfh0s60ul9js8r8uxtvtk8g67dsvv",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1xfqthwuv9d8vhgzt49v3huqjzzpq0g4lpg8x52",
+          "address": "friday1jwm9qq8dgk9469gxrgzhejgjasw8y2ysxd72w9",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday17cz82zrd33x9f9kel8p037sq0a8jp33hvlrvjj",
+          "address": "friday1v5chfcfn2fgwjhutrf2urk0kxwk6487h9hgxxg",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday14uwl7crklz9hvjvzga80kwy7pl524yxsvaetal",
+          "address": "friday1376wy6re5ayghgrkd60z2mrwapdsdkd3dvkf36",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1fjq6hns83d6qf79laj0h2gfyygpx6zvd8mg5ps",
+          "address": "friday1773scs57h0p9aavld7zj2x9az55hgz3gt8aygh",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1fl9f03hj048juzc7jwv6rfekf7uz2f47qpulru",
+          "address": "friday1u3456p4kjyvt6lh6fg7xps5rhzhkfpfhllu34g",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday16nmxpn7n6ptu6z7hg2qzhr69rrucywhtsq6ek2",
+          "address": "friday1w9e7872eyl587f6hs3wfpkp55z9u0wl6fy8lpq",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1jrs2nhw7ega4nd5arp60dmpnu0af72cledjp2p",
+          "address": "friday10776dajv9cz5g3qgz5ghtlmt4uywylq4w6u0jj",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         }
       ],
       "chain_name": "testnet"
-    },
-    "crisis": {
-      "constant_fee": {
-        "denom": "stake",
-        "amount": "1000"
-      }
-    },
-    "nickname": {
-      "accountarr": []
-    },
-    "mint": {
-      "minter": {
-        "inflation": "0.130000000000000000",
-        "annual_provisions": "0.000000000000000000"
-      },
-      "params": {
-        "mint_denom": "stake",
-        "inflation_rate_change": "0.130000000000000000",
-        "inflation_max": "0.200000000000000000",
-        "inflation_min": "0.070000000000000000",
-        "goal_bonded": "0.670000000000000000",
-        "blocks_per_year": "6311520"
-      }
-    },
-    "staking": {
-      "params": {
-        "unbonding_time": "1814400000000000",
-        "max_validators": 100,
-        "max_entries": 7,
-        "bond_denom": "stake"
-      },
-      "last_total_power": "0",
-      "last_validator_powers": null,
-      "validators": null,
-      "delegations": null,
-      "unbonding_delegations": null,
-      "redelegations": null,
-      "exported": false
-    },
-    "slashing": {
-      "params": {
-        "max_evidence_age": "120000000000",
-        "signed_blocks_window": "100",
-        "min_signed_per_window": "0.500000000000000000",
-        "downtime_jail_duration": "600000000000",
-        "slash_fraction_double_sign": "0.050000000000000000",
-        "slash_fraction_downtime": "0.010000000000000000"
-      },
-      "signing_infos": {},
-      "missed_blocks": {}
-    },
-    "accounts": [
-      {
-        "address": "friday1m80cfxy7w6wt8xvvwl08579hkvxxjdf9w4074d",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1s8zucqwzxkkngvvqcp9lej4d9rn27pfyqdg2el",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1qy2fuf6hg9nnmd34wgrqw7pryfun9yvawd8r44",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1fjkuluc3jyve3wju05jfp974wfwkjqcvrhfq8z",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday183um9vvufpg2ca92vdjj9h62ynntasp54rmjra",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1ayl50atsjpal6dmxqyrr7q5gh8grd5zk3stetr",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1dwptsyzqfa9qsrm0k62z73p6dykmkfhgajfxyy",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1wj89qyws9tfyq8dvkg2rpvyv57rwgv2xplkf2r",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1y2qa4g6jn8tjrennf59ljxpde6m9lf25n0c004",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday12u65ty273204d7wn63ur0yh7zkege7g9xp7ms5",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1d8yj7vqhuye7uqwdkq929ws43a3t2dghaxht07",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday146k5rwa6vx36alt038zavnfjc7muktrudtug2h",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday19jf40trw8w92uzeywg9hfu25lejx908tpa2sef",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday13wa54yadppu5xnd56leaf9t6gckqcd8r7dql6a",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday12nqzjaxhsshymufqkdvq9yjyl5fc0fk5t8d37j",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday19nedwdus3msyujc3za2nrc3qvfps26r4n3rlff",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1m5natfyfr8t673g34ahmz0ywywfnajmsk6rqss",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1cul854ksatypm93vs5j4t5h7sh3uguv5664ry0",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1ng68qjj385df5efp2s5p2zz7mwv23nk30ef99z",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1aavrmn3shhgq6m57t7wcju3npqw6wyucvvml9h",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1ddv0knlxvevqw43lfmzc3xg6gsaq8tgwx3jz3u",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1d4cmfvts0e525ptj32e774r6fpha0g77n0fl2g",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday12zy7zeea7gk68usgp5esve5dzetwnnvyawypv8",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday10y0u7kdg9yuvp8eyukkqyk7xecv842352tw8lg",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1hgsfwv2qtdyvxy6l4cj733zqz2hlshkk7r0qwu",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday18jvzvemygjusllwua058typqy3uc4y857hlkea",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1m3wjg2ueve9u9c4mdjxggamxqaxv706quq36gp",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1zg4q5p58578tng99tg8zj2w992g8r4szje6ue2",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday185kke5enpu7pltttda94xgve62uncm5aa7jze6",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1p8vuc5ps3smspqz4jv2d3zswmz7evav0fhpuph",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1ud4ln3e4kf2fuprxp4ww3vwcm8ekhxjf03s3vu",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1uqxvlpwnrr6k4vrjz3xyuvzdk2msgwypgn6pfn",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1kp6vkkx228kc3jp8rw86pkz4yk2xn7r6yd3lz0",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1d907nsg3nc28e3x2t5n5gs09dvnzegjulf7eja",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1mcke8r52cu4tnvase4q6yd0evu2ala0hq80hj5",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1fck93u37y3twpz6t24v8ze5alpuqr54txh4evz",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1qtc5ak2kptexyd2500xrdleqxtwc2h8582vflt",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1q2jjea2t6l4fd36cudsh7sjxel5cqp0mpvnszq",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1l983z7nta9uvv9e9e9n2ksaw6aedt8hdgpukr6",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1ah0dn2s37cvxu7d8dxsh69hae3xklrswexuhcq",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1tq3paz0x4qn7f43aelmx4ep0exn2lq3hwtcdra",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday10rwurq92aattsuuuaf2g7xttyxee9uccxagvl3",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday173eg50jpwhdjszpgduxgdxs77k4ph79uqt399p",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1ashg0dklun8g5c8zly4kfs7q9cwp36xjdm3jcn",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1shc2ajs5dpf84ef53hlgyh6d5rzyygsu4fms38",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1zd80jr38emvg0u0tt7yskux8fylzgvdzrm84tv",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1ar66ux4fzwcujpc72wwuswut8wjdr829mhr5gs",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday10cchd06d209j3gk9ya3gssgwnm5kmuy3pruxvq",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1ghvwcdhr08apdfzhr5lt8j29kzlkmd984fhtku",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday17f7kq7srykl7dnjyd2ntlllu2xpcd6tdzkmdxl",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1lhrmezwl95cwh4n62qyz998fz8thnslj7vze3d",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1a7fnwlc59xeh6suswjvwa2s40j07casg7x5hu4",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1wr73ggsl9zqtkupttfzmvk6dcztj20f7daqs8u",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1rhv7q5pre32nzv7pjcrrkxvm6dhaek04g2jut8",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1catw4yz8h98j0c2ju77c6l8qg7czfkn0lkcjpr",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1v3tdk9exgdzvu6mtk6w5kqq6ny6jtfd378hpwa",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1cfnguvrg0m6qm5uvx2nny5pr4yq7j57dasw07l",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday193czu2vr4m5p27q0h3v0xqdysee0j2rqwjg9ks",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1l0ux58ex8x753ysp2wkk8ncrwanedx3fep8hx0",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1mrxv6wcgkavpekwh96tu749efqhg32h6zwt0gr",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1xuuuu48tk9ax60xg4slpvk8p3rlpd9xjz3zu9u",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1nwmuay4v2d4r5q9dhdjfhw7t93e775nzcgkp6z",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1qfzsmt5vmwaasuxga6ezgd7qp3ftwlljem0h5e",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday16gpwwya3sduz6ak8l2xvlk24nan3wx3wllv4fl",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1qqkp2z6a5ry30ppkn0uhj43lttdd7cd4au6jua",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday13zrsxt7aq6cs8nakqnz43qrnlcvjrrwwjwcw6h",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1f637x60kwvlwq47xfudjtjg5zjve2x7jpyfwqn",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1fdqh9zxe733s6cqxvvylekecmy5ktrqamf4uf5",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1u0fznf6gsv3ykze559xmjj3s0dkkdf3qfrf6dj",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday18u3gc3kmppt49ww5dr2c368gjeh05flysu74dj",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday17r6t5kvakwxs0acje0x0vc7pm9m030f4vxmmee",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1luevd06dlyg55s6s299g24v6ccexrqsd8j4x7e",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1c3rwdtdac2q2y2tgjzt6cwfkcnpkev6vs2mdqx",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday16j2gp6mag9an8nh5qsr4dcgr9wfjc9mruvsr97",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1nfp67ey9ezk94n433xczhw7styhpe09apl85ux",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1lxqwnkp9km5wt0ec87gndqxthh5qvld6f33mx8",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday13n28r3cylqxe64xdsfmcn94048ehe0xg36mycj",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday12zthjrgl4ewxlyxhrq3svcy8fpr8xnea86vwhs",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1d85duvvd920rx290paf8xznlr4l5tcv2ws67ep",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday12uwxh3jteam7wkmq2wgc8m3wz8r2rd09aevv05",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday15779eayjm8en60fjxw6t5zpwrr9ps6spj7nfhu",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday14t50a4hgxdzrvsr0hv0h7w08maj2trjdakcfvl",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1gvnutrv2e8huywvynnp24tnuqrkaczkp9ez7r0",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1xcayrka6f2lqjde7rfy03x3n05t7vta9jyzkh4",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday12eh8g2r9vwluaxcvuqlxfs3xy8wwgdvzzrra7t",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday16hjrljzgccz33petrk0qlm3e44d4e5u6grx3jw",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1gzwlqda65kwq2ns6uza0ju3kttq4k09fa6jks9",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday19hd9k3qv8kx9ezaz5y9a0exqpryku2lh5q48km",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1nh0c7f2wjd983cc9v8ejs7f3fzha7fu5xp52v8",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1ps6w8pse5mfkx7ugwnncgfnmtggl4fl6yhxsta",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1dtwdu0002yhekgqm45kmv74m7ghzngprkz430s",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1czzp3k9wctf7sgpkyshuxwydhvwx5tz4d38dam",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1c48usr0f3xq0g9kz757a9xsfnmudppw8qa92sw",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1xfqthwuv9d8vhgzt49v3huqjzzpq0g4lpg8x52",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday17cz82zrd33x9f9kel8p037sq0a8jp33hvlrvjj",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday14uwl7crklz9hvjvzga80kwy7pl524yxsvaetal",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1fjq6hns83d6qf79laj0h2gfyygpx6zvd8mg5ps",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1fl9f03hj048juzc7jwv6rfekf7uz2f47qpulru",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday16nmxpn7n6ptu6z7hg2qzhr69rrucywhtsq6ek2",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      },
-      {
-        "address": "friday1jrs2nhw7ega4nd5arp60dmpnu0af72cledjp2p",
-        "coins": [
-          {
-            "denom": "stake",
-            "amount": "100000000"
-          }
-        ],
-        "sequence_number": "0",
-        "account_number": "0",
-        "original_vesting": [],
-        "delegated_free": [],
-        "delegated_vesting": [],
-        "start_time": "0",
-        "end_time": "0",
-        "module_name": "",
-        "module_permissions": [
-          ""
-        ]
-      }
-    ],
-    "auth": {
-      "params": {
-        "max_memo_characters": "256",
-        "tx_sig_limit": "7",
-        "tx_size_cost_per_byte": "10",
-        "sig_verify_cost_ed25519": "590",
-        "sig_verify_cost_secp256k1": "1000"
-      }
     }
   }
 }

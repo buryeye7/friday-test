@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #if [ $# == 0 ]; then
-#	echo "Please input node name"
+#jj	echo "Please input node name"
 #	exit 0 
 #fi
 
