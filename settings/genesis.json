@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2020-04-29T00:28:34.152357317Z",
+  "genesis_time": "2020-04-29T00:36:44.343836254Z",
   "chain_id": "testnet",
   "consensus_params": {
     "block": {
@@ -18,41 +18,7 @@
   },
   "app_hash": "",
   "app_state": {
-    "slashing": {
-      "params": {
-        "max_evidence_age": "120000000000",
-        "signed_blocks_window": "100",
-        "min_signed_per_window": "0.500000000000000000",
-        "downtime_jail_duration": "600000000000",
-        "slash_fraction_double_sign": "0.050000000000000000",
-        "slash_fraction_downtime": "0.010000000000000000"
-      },
-      "signing_infos": {},
-      "missed_blocks": {}
-    },
-    "gov": {
-      "starting_proposal_id": "1",
-      "deposits": null,
-      "votes": null,
-      "proposals": null,
-      "deposit_params": {
-        "min_deposit": [
-          {
-            "denom": "stake",
-            "amount": "10000000"
-          }
-        ],
-        "max_deposit_period": "172800000000000"
-      },
-      "voting_params": {
-        "voting_period": "172800000000000"
-      },
-      "tally_params": {
-        "quorum": "0.334000000000000000",
-        "threshold": "0.500000000000000000",
-        "veto": "0.334000000000000000"
-      }
-    },
+    "params": null,
     "auth": {
       "params": {
         "max_memo_characters": "256",
@@ -62,95 +28,15 @@
         "sig_verify_cost_secp256k1": "1000"
       }
     },
-    "nickname": {
-      "accountarr": []
-    },
-    "staking": {
-      "params": {
-        "unbonding_time": "1814400000000000",
-        "max_validators": 100,
-        "max_entries": 7,
-        "bond_denom": "stake"
-      },
-      "last_total_power": "0",
-      "last_validator_powers": null,
-      "validators": null,
-      "delegations": null,
-      "unbonding_delegations": null,
-      "redelegations": null,
-      "exported": false
-    },
     "crisis": {
       "constant_fee": {
         "denom": "stake",
         "amount": "1000"
       }
     },
-    "genutil": {
-      "gentxs": [
-        {
-          "type": "friday/StdTx",
-          "value": {
-            "msg": [
-              {
-                "type": "friday/MsgCreateValidator",
-                "value": {
-                  "description": {
-                    "moniker": "node1",
-                    "identity": "",
-                    "website": "",
-                    "details": ""
-                  },
-                  "commission": {
-                    "rate": "0.100000000000000000",
-                    "max_rate": "0.200000000000000000",
-                    "max_change_rate": "0.010000000000000000"
-                  },
-                  "min_self_delegation": "1",
-                  "delegator_address": "friday1v57zs4t2qzv3hxg840m9x8sjx6r4fh8j3swy4f",
-                  "validator_address": "fridayvaloper1v57zs4t2qzv3hxg840m9x8sjx6r4fh8jyy3vsp",
-                  "pubkey": "fridayvalconspub16jrl8jvqq9yhq7nj2fzky4nf29nnq7rv2smn2atkd925ztmjfp4k7jrgd4x4vdetxfhyxs64ffnxjv3j2p38ja66xvhkw72c9dukgcn5ddkk7a622eq5ze6wv4u8v3me23v8yejh24pxgmpnxdnkknz0v4d9jdzn9dhhgntpxepkvv2r0pd9g5z42exnjem62cmhycfj2vhhwuzsxfprs3shaazxt",
-                  "value": {
-                    "denom": "stake",
-                    "amount": "100000000"
-                  }
-                }
-              },
-              {
-                "type": "executionengine/CreateValidator",
-                "value": {
-                  "validator_address": "friday1v57zs4t2qzv3hxg840m9x8sjx6r4fh8j3swy4f",
-                  "cons_pubkey": "fridayvalconspub16jrl8jvqq9yhq7nj2fzky4nf29nnq7rv2smn2atkd925ztmjfp4k7jrgd4x4vdetxfhyxs64ffnxjv3j2p38ja66xvhkw72c9dukgcn5ddkk7a622eq5ze6wv4u8v3me23v8yejh24pxgmpnxdnkknz0v4d9jdzn9dhhgntpxepkvv2r0pd9g5z42exnjem62cmhycfj2vhhwuzsxfprs3shaazxt",
-                  "description": {
-                    "moniker": "node1",
-                    "identity": "",
-                    "website": "",
-                    "details": ""
-                  }
-                }
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas": "200000"
-            },
-            "signatures": [
-              {
-                "pub_key": {
-                  "type": "tendermint/PubKeySecp256k1",
-                  "value": "A1hwModQsK/IXShZ4ty4wN8TeB92QacJds+uIKa0QElD"
-                },
-                "signature": "lvbYo/borngxmijlbzeVDHy2kp00XeYnMW9e6qrGBD1AUqestFkMCpGIAB/gKjkzPavXt+DvPkajoKgtM4DORg=="
-              }
-            ],
-            "memo": "3669ca3b60e127a9f8612018a1b8eb2e6fc5b3e9@10.0.0.7:26656"
-          }
-        }
-      ]
-    },
     "accounts": [
       {
-        "address": "friday1v57zs4t2qzv3hxg840m9x8sjx6r4fh8j3swy4f",
+        "address": "friday1tlgy3xr5s9pdvc3kl3cvtwqey7aylwn8c0mr5z",
         "coins": [
           {
             "denom": "stake",
@@ -170,7 +56,7 @@
         ]
       },
       {
-        "address": "friday1gn9wqvrhxt3vjc934534q8fytxylfqu02lsa6x",
+        "address": "friday1kn3phfw2v576hsrhdz9za8zlsq5rlwldve8cgq",
         "coins": [
           {
             "denom": "stake",
@@ -190,7 +76,7 @@
         ]
       },
       {
-        "address": "friday1zkkrl2hzrgpf7l2dqq826zkcqfw7hsphzx4v2m",
+        "address": "friday1g8cusnwt8xd9epll0ug9clr229p063drs0shhf",
         "coins": [
           {
             "denom": "stake",
@@ -210,7 +96,7 @@
         ]
       },
       {
-        "address": "friday1tpuxstuylpj6yqfvq4525l7j8raat6ugcq8zvr",
+        "address": "friday1drxe3rsdtmxyxajaatk38tq2lg2ykypy7cll7f",
         "coins": [
           {
             "denom": "stake",
@@ -230,7 +116,7 @@
         ]
       },
       {
-        "address": "friday1fckhr82a68j3jv5nmdayn2cul9psxras0dkzvp",
+        "address": "friday10kkw0f0cl5duuk8wx2zyw8kdndyyh6uj4s4cpx",
         "coins": [
           {
             "denom": "stake",
@@ -250,7 +136,7 @@
         ]
       },
       {
-        "address": "friday14pmv2qw82z2xay7d9lh9qxknje54kq04seata9",
+        "address": "friday1dnkeau8q3m2gdf4jvkn9j7z0zpcva0hddkvnxn",
         "coins": [
           {
             "denom": "stake",
@@ -270,7 +156,7 @@
         ]
       },
       {
-        "address": "friday1sj5c565ve6r3rvv2dekw9dpktw8a96ztu8svm4",
+        "address": "friday1efv7fz0kacxsdgj403hr555xf5azjgcg00868p",
         "coins": [
           {
             "denom": "stake",
@@ -290,7 +176,7 @@
         ]
       },
       {
-        "address": "friday12lqs340enszgpe332myjswtcdaquz7pmupcsjg",
+        "address": "friday1k9xu98ccn72x8fua5z37av7nucazg49nh48mq9",
         "coins": [
           {
             "denom": "stake",
@@ -310,7 +196,7 @@
         ]
       },
       {
-        "address": "friday10tfzl2hyt2es300z60wfx8m5eahfgglmx86fqu",
+        "address": "friday1jhzxe4ea0as0m06002jcftq7csvel2r4xhxvt4",
         "coins": [
           {
             "denom": "stake",
@@ -330,7 +216,7 @@
         ]
       },
       {
-        "address": "friday1zpawgsnzyeul66jtdkhl60n3jyrg64m0wngtqe",
+        "address": "friday1ge675dsqkzun44czst29g0amv0c2xykfhhl94d",
         "coins": [
           {
             "denom": "stake",
@@ -350,7 +236,7 @@
         ]
       },
       {
-        "address": "friday1ensdn8rwuesa58c56jpk3mjjlr4stcj6ns64my",
+        "address": "friday1k92saqc7wuje4vf5qy0cugsergp8w4vud7d4e3",
         "coins": [
           {
             "denom": "stake",
@@ -370,7 +256,7 @@
         ]
       },
       {
-        "address": "friday1twf3fn4qmhv5xxl07v5aeg8udc0nrgfdnz7ucv",
+        "address": "friday1gun7ektahqfsp3capvnr4qm2jdydk4c204xsc2",
         "coins": [
           {
             "denom": "stake",
@@ -390,7 +276,7 @@
         ]
       },
       {
-        "address": "friday1ew7g9a585f2n2xslsq6nueg24sntfvvhqhup44",
+        "address": "friday1adnwj7p9jfustz8z36z25z9a0p6adk4ue7kp0u",
         "coins": [
           {
             "denom": "stake",
@@ -410,7 +296,7 @@
         ]
       },
       {
-        "address": "friday12qzewceyhesg04fu8td2uplegc3dk3ktef2r7r",
+        "address": "friday144atk8navttcr5ee5ngsrxlmlsyd74hyz64ecf",
         "coins": [
           {
             "denom": "stake",
@@ -430,7 +316,7 @@
         ]
       },
       {
-        "address": "friday17xe93mvcs53dxjp5kvpfxhjza5atstgtjl4ds8",
+        "address": "friday1vyckhqjdtqe43nu0pu322j563w88yv3km3fvvn",
         "coins": [
           {
             "denom": "stake",
@@ -450,7 +336,7 @@
         ]
       },
       {
-        "address": "friday10s7ku39zj88rwc5cg8fjdmtu6yuc0p3usmy7yr",
+        "address": "friday1sadm5x2w8k8v5c2qey72jat6zf3szhv72zj0fq",
         "coins": [
           {
             "denom": "stake",
@@ -470,7 +356,7 @@
         ]
       },
       {
-        "address": "friday1uzk2neyka7xwm8l63942lqzld83yy0zwfd32yz",
+        "address": "friday18y5apg0eaefw3467qye77cevmf0h34vhnmt3qn",
         "coins": [
           {
             "denom": "stake",
@@ -490,7 +376,7 @@
         ]
       },
       {
-        "address": "friday1eeca2elqxrvj80d2wkteu439uj55wym270gzcj",
+        "address": "friday17lk3w5jnfau54yn6n6ysv4ngtzlz6uu7k8u80g",
         "coins": [
           {
             "denom": "stake",
@@ -510,7 +396,7 @@
         ]
       },
       {
-        "address": "friday1za5saz34qzleqmlacm4e7f4msa6cdynp5smagv",
+        "address": "friday1lyddssh8lq6njgqe2nm4y8f86fqj0573073g4j",
         "coins": [
           {
             "denom": "stake",
@@ -530,7 +416,7 @@
         ]
       },
       {
-        "address": "friday1rl2rlz6tg7n8sy29q26kylu2s4u6x5z5ylc8kg",
+        "address": "friday1auauk9ga8xkclwpdck7586g4l30v8p724p5ac4",
         "coins": [
           {
             "denom": "stake",
@@ -550,7 +436,7 @@
         ]
       },
       {
-        "address": "friday1uhcnxlvt97j4yvdfvqx7ymk7r6dnqqhfja6a2a",
+        "address": "friday1sjskyzgvlmgfkxcr7eg2209kwney6mkqp2t3wz",
         "coins": [
           {
             "denom": "stake",
@@ -570,7 +456,7 @@
         ]
       },
       {
-        "address": "friday1avg67qyn0p6qpvwtu6xu5s6zugqmezjy6f7kmx",
+        "address": "friday1qwg2dcr72wkvkpfvzcjzxynufrl223s0nry7fc",
         "coins": [
           {
             "denom": "stake",
@@ -590,7 +476,7 @@
         ]
       },
       {
-        "address": "friday1dlw5ve2twsklag4h3qm2kzrypmar0rknnsy63h",
+        "address": "friday1gs0f3wm57xnlq7au5eyqea4p5m8ah40m7cdjv6",
         "coins": [
           {
             "denom": "stake",
@@ -610,7 +496,7 @@
         ]
       },
       {
-        "address": "friday1636zzzq2acegx4ejn4gm876kt9d7f2z3jlsxdq",
+        "address": "friday1n7q57qnx5kjqyh5zkrdhg6nt0tvmspy9flzpz8",
         "coins": [
           {
             "denom": "stake",
@@ -630,7 +516,7 @@
         ]
       },
       {
-        "address": "friday18pl9yg469qzydks5a0mzakf33acxeyz5xmcyqm",
+        "address": "friday1g4d2r0cuqm2udf9ndywg2gfkrgzpj2f5x46avc",
         "coins": [
           {
             "denom": "stake",
@@ -650,7 +536,7 @@
         ]
       },
       {
-        "address": "friday1vkwpk089qagdzmxd3clsaws2gv2zg5rmazma8m",
+        "address": "friday1mm35ynrwnvy246wq378rm3y5u6sklluwgu0hdz",
         "coins": [
           {
             "denom": "stake",
@@ -670,7 +556,7 @@
         ]
       },
       {
-        "address": "friday130j8mf8m75nsngjh9uvcf84cu7m260szm2h5wt",
+        "address": "friday1hv4006v3udg0p0709557h647wtgh537wjmh3qk",
         "coins": [
           {
             "denom": "stake",
@@ -690,7 +576,7 @@
         ]
       },
       {
-        "address": "friday1686z3q0c8nqkmkqmxsax00tx8trkgu4kq38nhz",
+        "address": "friday1refz7vf952xjr2hte47lm3u4p936hhcyagjgmw",
         "coins": [
           {
             "denom": "stake",
@@ -710,7 +596,7 @@
         ]
       },
       {
-        "address": "friday150kyxhfressx9laturelpcu7xrmpcg2j4n33uz",
+        "address": "friday1gunqk46gr09g6rru53hmf297k5llqjvrvm5hnz",
         "coins": [
           {
             "denom": "stake",
@@ -730,7 +616,7 @@
         ]
       },
       {
-        "address": "friday1shtmuh5nst86v29492mmunwszjujtz8wnlffr3",
+        "address": "friday1fsnfn5ssru5je7wd0va809u8xdnus34jr3ls24",
         "coins": [
           {
             "denom": "stake",
@@ -750,7 +636,7 @@
         ]
       },
       {
-        "address": "friday1hyjrkcuf2n5gqch8mjyzvayddds0sx406pc9zg",
+        "address": "friday1yrfg3wveyf2g7ru3j6pc925k3rfhvmaxg3665t",
         "coins": [
           {
             "denom": "stake",
@@ -770,7 +656,7 @@
         ]
       },
       {
-        "address": "friday1t7nvq5n84c8e5h4w9qkv4j2rlysscpcph2yx2p",
+        "address": "friday1fkhxa90fwqrexuumad9skepuw88mswpxntefjd",
         "coins": [
           {
             "denom": "stake",
@@ -790,7 +676,7 @@
         ]
       },
       {
-        "address": "friday1304j3pvg7mnhww8u5k926aw9q8cnczqz3wtltr",
+        "address": "friday1y0ew2jammpgnq52xeqkfxn2x7nzxfzqj6keada",
         "coins": [
           {
             "denom": "stake",
@@ -810,7 +696,7 @@
         ]
       },
       {
-        "address": "friday1xw2ctcmpgkazghq92w7ka65hvc70ere4vjlgel",
+        "address": "friday1hy6c5ndcej3pcgfa328xrxpuw5q5sh8s9a4s2h",
         "coins": [
           {
             "denom": "stake",
@@ -830,7 +716,7 @@
         ]
       },
       {
-        "address": "friday14f2466h0dcydnx2xrcg6dharh50agw034de3lp",
+        "address": "friday1uw6qetv7hrhxa0r24nx56fhczzetslrgce5klx",
         "coins": [
           {
             "denom": "stake",
@@ -850,7 +736,7 @@
         ]
       },
       {
-        "address": "friday1tud5h3dpwxzd693l6qzn85nq7j08x7rhs6ns8h",
+        "address": "friday18qn8y28rq5x0axjsvyt359h3mcgpeteftnrr7r",
         "coins": [
           {
             "denom": "stake",
@@ -870,7 +756,7 @@
         ]
       },
       {
-        "address": "friday17lqvmq96patrwe7xhssul0k2wdd664kna7seg5",
+        "address": "friday1qz2q3s5pjzrvs3ddtsmjdd0pcjplrc6tep4tq5",
         "coins": [
           {
             "denom": "stake",
@@ -890,7 +776,7 @@
         ]
       },
       {
-        "address": "friday1y62c84ev40wktf5244vk6zctctsudv3p7f764k",
+        "address": "friday1vddc9taj0mcqkff03mzf05gxt6ndk0ud6tvfm9",
         "coins": [
           {
             "denom": "stake",
@@ -910,7 +796,7 @@
         ]
       },
       {
-        "address": "friday10cxgksp6yealhezhgma7jgg20r6gtcdpd3w6e5",
+        "address": "friday124vsc0umnnk8jc8673ae0ayuhehm9fe4r4c38r",
         "coins": [
           {
             "denom": "stake",
@@ -930,7 +816,7 @@
         ]
       },
       {
-        "address": "friday1m9lct4l7rshyk8h5cj6m3h9akj6hjtujwn8t8g",
+        "address": "friday16x74cecn9nmygvqgz3hv5sx44hlhsvqh74pzrp",
         "coins": [
           {
             "denom": "stake",
@@ -950,7 +836,7 @@
         ]
       },
       {
-        "address": "friday13d9xemwzz8n4k5a9u3qjsk6pk7l62e3ms55mzt",
+        "address": "friday19zsdrgaafzy8y0xh63qnt7fgtxx0mj2kfnypzl",
         "coins": [
           {
             "denom": "stake",
@@ -970,7 +856,7 @@
         ]
       },
       {
-        "address": "friday1r4gxe4dgx40fl9de7lxcl40h7ltmmp7fglmvx4",
+        "address": "friday1slj7flmfaj43w83wfw4k5wlj7gg7xlq759arek",
         "coins": [
           {
             "denom": "stake",
@@ -990,7 +876,7 @@
         ]
       },
       {
-        "address": "friday1lm9y9kuc4ju4jdr8ra8dcw894pqsjqt6g2fld6",
+        "address": "friday17fc5m47q46ateg04e0rptnva5mkmrmcuntxxt9",
         "coins": [
           {
             "denom": "stake",
@@ -1010,7 +896,7 @@
         ]
       },
       {
-        "address": "friday1ktv6a5q626cn0tny96gwnysdp6s9p6yec05y93",
+        "address": "friday165klnfk6hdngsls7fg536zwgrr2nwu7zrrwy9n",
         "coins": [
           {
             "denom": "stake",
@@ -1030,7 +916,7 @@
         ]
       },
       {
-        "address": "friday1xpkja5fv9yqudevq5ajvfuhn4h8xn3pc30nv3f",
+        "address": "friday14ga8zjsn66rafk2cukgysusslnkg09tplyyft7",
         "coins": [
           {
             "denom": "stake",
@@ -1050,7 +936,7 @@
         ]
       },
       {
-        "address": "friday18j5lchq92zwu6p4xp5pmzwa88mxcnmrnkadvde",
+        "address": "friday1m705fqk2nnu7auvk3slax3ukllyph34g5clc9j",
         "coins": [
           {
             "denom": "stake",
@@ -1070,7 +956,7 @@
         ]
       },
       {
-        "address": "friday1yl9czam9zrdz8kh9pg8kgwvl6axe8njkq2qsw5",
+        "address": "friday1azg5wumqhgs9xq4k8s3ku0se7w2jfeqksj5u00",
         "coins": [
           {
             "denom": "stake",
@@ -1090,7 +976,7 @@
         ]
       },
       {
-        "address": "friday1gq5yc47l6v7a6zaa5vp0as6kk7rehcgh7xs3k2",
+        "address": "friday16frk3xjy6d5tt0ly8s54fa9xp6uep28quv6jag",
         "coins": [
           {
             "denom": "stake",
@@ -1110,7 +996,7 @@
         ]
       },
       {
-        "address": "friday18l98vxv39ue84ka4zzqtxvhhc889x058t8u9mg",
+        "address": "friday14lud7ce0y85xhul4lm53jqqznp98tj60g39p8u",
         "coins": [
           {
             "denom": "stake",
@@ -1130,7 +1016,7 @@
         ]
       },
       {
-        "address": "friday1j23ajnq605z587sncl6dgaplukcwvyfz3da2p8",
+        "address": "friday1tuycc8pc9e3rzrej93ukl04njhvwdlc65m5dpy",
         "coins": [
           {
             "denom": "stake",
@@ -1150,7 +1036,7 @@
         ]
       },
       {
-        "address": "friday10yjnfgq3ujddahzfn0z0c5qtjq2l3m2hgv6yty",
+        "address": "friday1vrp0zpkmgue8qheeqex47l8rn23pq7artefxy7",
         "coins": [
           {
             "denom": "stake",
@@ -1170,7 +1056,7 @@
         ]
       },
       {
-        "address": "friday1f3dt8c9vm52lga76lt8ysp9n4m7n52vx8ug6rz",
+        "address": "friday17uc508x8q9dn8nsg3aws24qyg5l4fy593vkrf7",
         "coins": [
           {
             "denom": "stake",
@@ -1190,7 +1076,7 @@
         ]
       },
       {
-        "address": "friday1lx2vphlnsqj5rjw7y6wx4mr6llx32adhgg6lxa",
+        "address": "friday1c68ew4zd5kssl5xt8n0x94x57wywf0qw6wkqpp",
         "coins": [
           {
             "denom": "stake",
@@ -1210,7 +1096,7 @@
         ]
       },
       {
-        "address": "friday1pl99n5gclmhqstj43umsmgsy96t8l05cuwf3de",
+        "address": "friday1m45lvlusyct0rkkxvq9fum47d4lj4cwtw3zmn7",
         "coins": [
           {
             "denom": "stake",
@@ -1230,7 +1116,7 @@
         ]
       },
       {
-        "address": "friday1eswxlrnxw6pcshlt72anldkuyjq30py9m0ufy2",
+        "address": "friday1447c6zmla8l7rfpf22a69dsdukwzsz0ynprsvg",
         "coins": [
           {
             "denom": "stake",
@@ -1250,7 +1136,7 @@
         ]
       },
       {
-        "address": "friday136qtxntw6qt55fhyk5gkmx0c3nrdqr848ulzg3",
+        "address": "friday1tahelulglhu9wfwf27whysgap3t34qu9xj9s6e",
         "coins": [
           {
             "denom": "stake",
@@ -1270,7 +1156,7 @@
         ]
       },
       {
-        "address": "friday1ep3j4v096ypwzkpvn8q42lelh6kk9dy6hhc4q7",
+        "address": "friday1rw7ls7ta2w8d7a79cthn6txerpj6ugxqfppckc",
         "coins": [
           {
             "denom": "stake",
@@ -1290,7 +1176,7 @@
         ]
       },
       {
-        "address": "friday13ulpehe72e4edwavqse9htkg6qgw7ksnhy6m9y",
+        "address": "friday15ja6lzrarn943smmhwvhyduxafujtd3v3v2nmj",
         "coins": [
           {
             "denom": "stake",
@@ -1310,7 +1196,7 @@
         ]
       },
       {
-        "address": "friday1nqq6rq27uk897clfzhg888sne2zvkgd8dapyxn",
+        "address": "friday1jwlpkkhx4xhmuvkryh6ln4djyj3gmhfeg3vdz4",
         "coins": [
           {
             "denom": "stake",
@@ -1330,7 +1216,7 @@
         ]
       },
       {
-        "address": "friday1cvj3ux7qya4wtv6r0az73g7a9jgqq8n2yw3r6g",
+        "address": "friday160erkwsh49jgvymxw5mvpsjn6yyq3e8rhgw62v",
         "coins": [
           {
             "denom": "stake",
@@ -1350,7 +1236,7 @@
         ]
       },
       {
-        "address": "friday13plvhtrshp0xkxz4zujhr27jf6k7dtutvfnxc3",
+        "address": "friday1g2rn7eryp95qqqwjh386ze6amtj9ewtkk6zm75",
         "coins": [
           {
             "denom": "stake",
@@ -1370,7 +1256,7 @@
         ]
       },
       {
-        "address": "friday1zaputrhagqw0ueq50stswlkp79plus4ux3qq44",
+        "address": "friday1ql5482gnh6acqllu5lpw88hlf6l4c3keyuvvep",
         "coins": [
           {
             "denom": "stake",
@@ -1390,7 +1276,7 @@
         ]
       },
       {
-        "address": "friday1pyyk5qum4cleqawhvfrue44zyqe7hyqyvtpwq3",
+        "address": "friday1u62g946pcdnvw5wyqleu80y4m5twrkx2tresqh",
         "coins": [
           {
             "denom": "stake",
@@ -1410,7 +1296,7 @@
         ]
       },
       {
-        "address": "friday1hjuuprpzytsvfyr0qjxtlccwruk69c3hzskvj2",
+        "address": "friday1mpdhrj6fvrx4c7l0q3ds5x8kcf0u22vlvgu7vl",
         "coins": [
           {
             "denom": "stake",
@@ -1430,7 +1316,7 @@
         ]
       },
       {
-        "address": "friday1hs4lkkaksv62z5rk67vkccgwpcws89hshg3kun",
+        "address": "friday1d83gqre0l20why4plw3wtyr9vzae7m09nh9u59",
         "coins": [
           {
             "denom": "stake",
@@ -1450,7 +1336,7 @@
         ]
       },
       {
-        "address": "friday1agwr0r7z734syjyxj9ku2hyl5ehmer7kpzkzdv",
+        "address": "friday1xx6xarqzru85updkkrfr4ujve087vtptrk8spj",
         "coins": [
           {
             "denom": "stake",
@@ -1470,7 +1356,7 @@
         ]
       },
       {
-        "address": "friday1k5nvras2qzcf0ffjza4c6w2lhra302gqp5xcdd",
+        "address": "friday164s2lzj7nglv5v73g4wzd4033ul2a6rg5za50q",
         "coins": [
           {
             "denom": "stake",
@@ -1490,7 +1376,7 @@
         ]
       },
       {
-        "address": "friday146nes646mk9swssdvqajq534ga9kk6ftaq9dkg",
+        "address": "friday1hasz29dsmqpmlgx9n9awljjkezf05ypgdgtl8y",
         "coins": [
           {
             "denom": "stake",
@@ -1510,7 +1396,7 @@
         ]
       },
       {
-        "address": "friday1lwpaada0x5mstgh9a9at25p502a3h793p4uj5u",
+        "address": "friday1lq9vrljg5yakg34rtx39xzdpd33ajc9re7zv5v",
         "coins": [
           {
             "denom": "stake",
@@ -1530,7 +1416,7 @@
         ]
       },
       {
-        "address": "friday1acs0aerxvmf7qef84u2fyz07dfdzrwfrp3mk06",
+        "address": "friday164kwd69mmdmm2y5mmvpf4du0e9wxhzquxltt6p",
         "coins": [
           {
             "denom": "stake",
@@ -1550,7 +1436,7 @@
         ]
       },
       {
-        "address": "friday102kzjqs8n0s5vld8seea4zcjhwhkpk7pwag5j6",
+        "address": "friday1nakvv9mvmd8j5x2ly4efze70fm9yqqqhvlppr9",
         "coins": [
           {
             "denom": "stake",
@@ -1570,7 +1456,7 @@
         ]
       },
       {
-        "address": "friday1erkl2n65tq22ykazheap0sutyk8cwzxdh5jp9x",
+        "address": "friday1kxj8g9dxzqp5qmk49m7g0mrvfvf2v8w8np0dry",
         "coins": [
           {
             "denom": "stake",
@@ -1590,7 +1476,7 @@
         ]
       },
       {
-        "address": "friday1azmmwuhvxuzh6vshrl806vv9jruylxa5mehfr3",
+        "address": "friday19vhhzycnexgdxe35r0k9fva29jumk247w6fapa",
         "coins": [
           {
             "denom": "stake",
@@ -1610,7 +1496,7 @@
         ]
       },
       {
-        "address": "friday1t70cflud2hl53335w4w9r03nw2qn6m7mfv3t7w",
+        "address": "friday1g9mqd9z6pfrd56uljnxz7leh00glxa0nex5w22",
         "coins": [
           {
             "denom": "stake",
@@ -1630,7 +1516,7 @@
         ]
       },
       {
-        "address": "friday19tze7tu9tensh99ydes030eu2q9vhh3fkywuqq",
+        "address": "friday1g8afra8e29yrq766aj2zsgdzmr734pz23xg3wn",
         "coins": [
           {
             "denom": "stake",
@@ -1650,7 +1536,7 @@
         ]
       },
       {
-        "address": "friday1ex8jh4a5ufhljvw93vysjh3mwg6djt0gf4w733",
+        "address": "friday10l5ty532l3x5pvhrlax8g7elkkphae7n6van9c",
         "coins": [
           {
             "denom": "stake",
@@ -1670,7 +1556,7 @@
         ]
       },
       {
-        "address": "friday1l73jx8e6nfpf2ymmzq63fmuw6gwx4fr04nphk0",
+        "address": "friday1dmtp3c932zpzdwr72d5rd08k07dx7mffjgt43z",
         "coins": [
           {
             "denom": "stake",
@@ -1690,7 +1576,7 @@
         ]
       },
       {
-        "address": "friday1tuxgtv968udlmxs5t8f4wcha7uv639v7hx7wu2",
+        "address": "friday14u7dvqmhlwltz572k2z29cvuxzktdzufkpxa3y",
         "coins": [
           {
             "denom": "stake",
@@ -1710,7 +1596,7 @@
         ]
       },
       {
-        "address": "friday16r2k48rnrp02ahf6s3wfyeam5ves2sj4h0lxc9",
+        "address": "friday1lqd853cmal7d3ueu5njp0k0z8xk06jqnta2em8",
         "coins": [
           {
             "denom": "stake",
@@ -1730,7 +1616,7 @@
         ]
       },
       {
-        "address": "friday14tceut0lmmdpjztparwhtpuk0vuf3r0t5sms5s",
+        "address": "friday1q9g9nk7zyjq3zm0mttlah3wc0umz3k9cyw2ruv",
         "coins": [
           {
             "denom": "stake",
@@ -1750,7 +1636,7 @@
         ]
       },
       {
-        "address": "friday1r62jcqfh649cujdyvcvt4z7kfv2c0j2l3fqkq7",
+        "address": "friday10xxkn27w7qgh5hqenkm930asjqyxg9750up87h",
         "coins": [
           {
             "denom": "stake",
@@ -1770,7 +1656,7 @@
         ]
       },
       {
-        "address": "friday1pze8h0zluj7nn5mt9taghqnt8rwpl00qeahegf",
+        "address": "friday12vp3n0n9fchdfmg924ek9nv99zm2qh6gt59rtx",
         "coins": [
           {
             "denom": "stake",
@@ -1790,7 +1676,7 @@
         ]
       },
       {
-        "address": "friday1hefz3uafmwvplnc2f7wm3fy9kfxkg9rz56a0cn",
+        "address": "friday1m25swy3as5kqtmwn82puzwjxd96drj9jf60yar",
         "coins": [
           {
             "denom": "stake",
@@ -1810,7 +1696,7 @@
         ]
       },
       {
-        "address": "friday1dzykkyh8ecjfmmang0trpz747erhlqds9ttkrz",
+        "address": "friday1vj2rx2x5f4wsxmyv5ma6hu6fjfxjgq9znk0c7a",
         "coins": [
           {
             "denom": "stake",
@@ -1830,7 +1716,7 @@
         ]
       },
       {
-        "address": "friday1vw93rf57pms3dastk0cldlnzh4z3whlnj9nefp",
+        "address": "friday1hapf9n8yd58w2hjhxs9ktzv73r5rwaz5kanzjq",
         "coins": [
           {
             "denom": "stake",
@@ -1850,7 +1736,7 @@
         ]
       },
       {
-        "address": "friday1g9x74d4aqtkk6n4qqdkqk2cgqj96all9as8ehy",
+        "address": "friday15qazvkmvn3w7n2597zzvtrpgf5qyupjex2vm7h",
         "coins": [
           {
             "denom": "stake",
@@ -1870,7 +1756,7 @@
         ]
       },
       {
-        "address": "friday1ruf3vcgmstah5esft9gw5xtye3nzdv0tzr242c",
+        "address": "friday1jlerzc4ru0ffyz05fln8dxzk0786z6fjsxzt5r",
         "coins": [
           {
             "denom": "stake",
@@ -1890,7 +1776,7 @@
         ]
       },
       {
-        "address": "friday1r8v9n78mecwscsvqy6t78n7zyxpeuwtueu2876",
+        "address": "friday1zjk2gdr6ghqwfd0y0kjt7gw8rxa7pca2dkm7q7",
         "coins": [
           {
             "denom": "stake",
@@ -1910,7 +1796,7 @@
         ]
       },
       {
-        "address": "friday1vxpadxvs0uuavxmw2zsvh04hsu78eltkgdavlj",
+        "address": "friday1jg87g4fwqfgjluj3qnr7rv949d3aq2w80v2e6h",
         "coins": [
           {
             "denom": "stake",
@@ -1930,7 +1816,7 @@
         ]
       },
       {
-        "address": "friday13fcf68astcxn0p3pphv7mkdqldycf2mrxp3kag",
+        "address": "friday12acnuqumvqs63p8axr5l02smm4hdjqzj6j0su2",
         "coins": [
           {
             "denom": "stake",
@@ -1950,7 +1836,7 @@
         ]
       },
       {
-        "address": "friday1lg9yka9t2jrp9y3mu0jhl85a60fjmgdf5s8qwj",
+        "address": "friday100k6yz7awcv9s3cqkk85ruwjszlr42kp60r0dd",
         "coins": [
           {
             "denom": "stake",
@@ -1970,7 +1856,7 @@
         ]
       },
       {
-        "address": "friday1lduyhj43jqdce2m3dk8etn2spavme7s9ks30ha",
+        "address": "friday1dn9e7su0tyq7r67sg4858mmz0ce33kh3m7dkmx",
         "coins": [
           {
             "denom": "stake",
@@ -1990,7 +1876,7 @@
         ]
       },
       {
-        "address": "friday1q57fmw3v27e4wpxkqxh7huttpvkk36c36k5qd2",
+        "address": "friday1klwzyeucd4q4wdr9pumgfm78w76spg78x6e970",
         "coins": [
           {
             "denom": "stake",
@@ -2010,7 +1896,7 @@
         ]
       },
       {
-        "address": "friday1er70c55crdsnq72t934fhv5jgh7kmcgs6amlak",
+        "address": "friday1fk3dukzqg0mhs0er2mhedyvjvx9zs6d8uvswe0",
         "coins": [
           {
             "denom": "stake",
@@ -2030,7 +1916,7 @@
         ]
       },
       {
-        "address": "friday1kugkqnaqut9tcyuaspvsg6frlgjlla8tqqnghn",
+        "address": "friday1kwxa96p3yt48str5mvqc7txenhdsdjtm5ykhpj",
         "coins": [
           {
             "denom": "stake",
@@ -2050,7 +1936,7 @@
         ]
       },
       {
-        "address": "friday1928kmqeyg808g07wzf7reakm9gz3srd4frhcn5",
+        "address": "friday1qdszxj46ay65sg9eh955sx68swzuga5ydjnrdv",
         "coins": [
           {
             "denom": "stake",
@@ -2070,7 +1956,7 @@
         ]
       },
       {
-        "address": "friday1v07rds5zk53gedj0j5vxnxdsfelfmlffxmq4dk",
+        "address": "friday1j8lnk5j7qh3xl7vfzzefs37urgnc5p5raucyvj",
         "coins": [
           {
             "denom": "stake",
@@ -2090,7 +1976,7 @@
         ]
       },
       {
-        "address": "friday1m6t43x597q2qjrdws68k9jne939x86m69wtmwj",
+        "address": "friday1s0q34r6rhekezqj3x0dy82mcs9p9rn89gzx5lw",
         "coins": [
           {
             "denom": "stake",
@@ -2110,7 +1996,7 @@
         ]
       },
       {
-        "address": "friday1wvunlmepq98wmscq9nf5vrzcv7r8d6kx5he8dx",
+        "address": "friday10skr5d20q2pgq2vaeph9nv9t4fapuk94gc8fcj",
         "coins": [
           {
             "denom": "stake",
@@ -2130,7 +2016,7 @@
         ]
       },
       {
-        "address": "friday1gdk69h0wgx92462zjtrqx7jkvch92jtfrucsc3",
+        "address": "friday1kcuyu5xyy3pvhlq70rynytfa9a5ex7m3ydapuy",
         "coins": [
           {
             "denom": "stake",
@@ -2150,19 +2036,43 @@
         ]
       }
     ],
-    "mint": {
-      "minter": {
-        "inflation": "0.130000000000000000",
-        "annual_provisions": "0.000000000000000000"
-      },
+    "slashing": {
       "params": {
-        "mint_denom": "stake",
-        "inflation_rate_change": "0.130000000000000000",
-        "inflation_max": "0.200000000000000000",
-        "inflation_min": "0.070000000000000000",
-        "goal_bonded": "0.670000000000000000",
-        "blocks_per_year": "6311520"
-      }
+        "max_evidence_age": "120000000000",
+        "signed_blocks_window": "100",
+        "min_signed_per_window": "0.500000000000000000",
+        "downtime_jail_duration": "600000000000",
+        "slash_fraction_double_sign": "0.050000000000000000",
+        "slash_fraction_downtime": "0.010000000000000000"
+      },
+      "signing_infos": {},
+      "missed_blocks": {}
+    },
+    "distribution": {
+      "fee_pool": {
+        "community_pool": []
+      },
+      "community_tax": "0.020000000000000000",
+      "base_proposer_reward": "0.010000000000000000",
+      "bonus_proposer_reward": "0.040000000000000000",
+      "withdraw_addr_enabled": true,
+      "delegator_withdraw_infos": [],
+      "previous_proposer": "",
+      "outstanding_rewards": [],
+      "validator_accumulated_commissions": [],
+      "validator_historical_rewards": [],
+      "validator_current_rewards": [],
+      "delegator_starting_infos": [],
+      "validator_slash_events": []
+    },
+    "nickname": {
+      "accountarr": []
+    },
+    "bank": {
+      "send_enabled": true
+    },
+    "supply": {
+      "supply": []
     },
     "contract": {
       "genesis_conf": {
@@ -2191,531 +2101,621 @@
       },
       "accounts": [
         {
-          "address": "friday1v57zs4t2qzv3hxg840m9x8sjx6r4fh8j3swy4f",
+          "address": "friday1tlgy3xr5s9pdvc3kl3cvtwqey7aylwn8c0mr5z",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1gn9wqvrhxt3vjc934534q8fytxylfqu02lsa6x",
+          "address": "friday1kn3phfw2v576hsrhdz9za8zlsq5rlwldve8cgq",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1zkkrl2hzrgpf7l2dqq826zkcqfw7hsphzx4v2m",
+          "address": "friday1g8cusnwt8xd9epll0ug9clr229p063drs0shhf",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1tpuxstuylpj6yqfvq4525l7j8raat6ugcq8zvr",
+          "address": "friday1drxe3rsdtmxyxajaatk38tq2lg2ykypy7cll7f",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1fckhr82a68j3jv5nmdayn2cul9psxras0dkzvp",
+          "address": "friday10kkw0f0cl5duuk8wx2zyw8kdndyyh6uj4s4cpx",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday14pmv2qw82z2xay7d9lh9qxknje54kq04seata9",
+          "address": "friday1dnkeau8q3m2gdf4jvkn9j7z0zpcva0hddkvnxn",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1sj5c565ve6r3rvv2dekw9dpktw8a96ztu8svm4",
+          "address": "friday1efv7fz0kacxsdgj403hr555xf5azjgcg00868p",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday12lqs340enszgpe332myjswtcdaquz7pmupcsjg",
+          "address": "friday1k9xu98ccn72x8fua5z37av7nucazg49nh48mq9",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday10tfzl2hyt2es300z60wfx8m5eahfgglmx86fqu",
+          "address": "friday1jhzxe4ea0as0m06002jcftq7csvel2r4xhxvt4",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1zpawgsnzyeul66jtdkhl60n3jyrg64m0wngtqe",
+          "address": "friday1ge675dsqkzun44czst29g0amv0c2xykfhhl94d",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1ensdn8rwuesa58c56jpk3mjjlr4stcj6ns64my",
+          "address": "friday1k92saqc7wuje4vf5qy0cugsergp8w4vud7d4e3",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1twf3fn4qmhv5xxl07v5aeg8udc0nrgfdnz7ucv",
+          "address": "friday1gun7ektahqfsp3capvnr4qm2jdydk4c204xsc2",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1ew7g9a585f2n2xslsq6nueg24sntfvvhqhup44",
+          "address": "friday1adnwj7p9jfustz8z36z25z9a0p6adk4ue7kp0u",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday12qzewceyhesg04fu8td2uplegc3dk3ktef2r7r",
+          "address": "friday144atk8navttcr5ee5ngsrxlmlsyd74hyz64ecf",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday17xe93mvcs53dxjp5kvpfxhjza5atstgtjl4ds8",
+          "address": "friday1vyckhqjdtqe43nu0pu322j563w88yv3km3fvvn",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday10s7ku39zj88rwc5cg8fjdmtu6yuc0p3usmy7yr",
+          "address": "friday1sadm5x2w8k8v5c2qey72jat6zf3szhv72zj0fq",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1uzk2neyka7xwm8l63942lqzld83yy0zwfd32yz",
+          "address": "friday18y5apg0eaefw3467qye77cevmf0h34vhnmt3qn",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1eeca2elqxrvj80d2wkteu439uj55wym270gzcj",
+          "address": "friday17lk3w5jnfau54yn6n6ysv4ngtzlz6uu7k8u80g",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1za5saz34qzleqmlacm4e7f4msa6cdynp5smagv",
+          "address": "friday1lyddssh8lq6njgqe2nm4y8f86fqj0573073g4j",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1rl2rlz6tg7n8sy29q26kylu2s4u6x5z5ylc8kg",
+          "address": "friday1auauk9ga8xkclwpdck7586g4l30v8p724p5ac4",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1uhcnxlvt97j4yvdfvqx7ymk7r6dnqqhfja6a2a",
+          "address": "friday1sjskyzgvlmgfkxcr7eg2209kwney6mkqp2t3wz",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1avg67qyn0p6qpvwtu6xu5s6zugqmezjy6f7kmx",
+          "address": "friday1qwg2dcr72wkvkpfvzcjzxynufrl223s0nry7fc",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1dlw5ve2twsklag4h3qm2kzrypmar0rknnsy63h",
+          "address": "friday1gs0f3wm57xnlq7au5eyqea4p5m8ah40m7cdjv6",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1636zzzq2acegx4ejn4gm876kt9d7f2z3jlsxdq",
+          "address": "friday1n7q57qnx5kjqyh5zkrdhg6nt0tvmspy9flzpz8",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday18pl9yg469qzydks5a0mzakf33acxeyz5xmcyqm",
+          "address": "friday1g4d2r0cuqm2udf9ndywg2gfkrgzpj2f5x46avc",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1vkwpk089qagdzmxd3clsaws2gv2zg5rmazma8m",
+          "address": "friday1mm35ynrwnvy246wq378rm3y5u6sklluwgu0hdz",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday130j8mf8m75nsngjh9uvcf84cu7m260szm2h5wt",
+          "address": "friday1hv4006v3udg0p0709557h647wtgh537wjmh3qk",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1686z3q0c8nqkmkqmxsax00tx8trkgu4kq38nhz",
+          "address": "friday1refz7vf952xjr2hte47lm3u4p936hhcyagjgmw",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday150kyxhfressx9laturelpcu7xrmpcg2j4n33uz",
+          "address": "friday1gunqk46gr09g6rru53hmf297k5llqjvrvm5hnz",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1shtmuh5nst86v29492mmunwszjujtz8wnlffr3",
+          "address": "friday1fsnfn5ssru5je7wd0va809u8xdnus34jr3ls24",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1hyjrkcuf2n5gqch8mjyzvayddds0sx406pc9zg",
+          "address": "friday1yrfg3wveyf2g7ru3j6pc925k3rfhvmaxg3665t",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1t7nvq5n84c8e5h4w9qkv4j2rlysscpcph2yx2p",
+          "address": "friday1fkhxa90fwqrexuumad9skepuw88mswpxntefjd",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1304j3pvg7mnhww8u5k926aw9q8cnczqz3wtltr",
+          "address": "friday1y0ew2jammpgnq52xeqkfxn2x7nzxfzqj6keada",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1xw2ctcmpgkazghq92w7ka65hvc70ere4vjlgel",
+          "address": "friday1hy6c5ndcej3pcgfa328xrxpuw5q5sh8s9a4s2h",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday14f2466h0dcydnx2xrcg6dharh50agw034de3lp",
+          "address": "friday1uw6qetv7hrhxa0r24nx56fhczzetslrgce5klx",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1tud5h3dpwxzd693l6qzn85nq7j08x7rhs6ns8h",
+          "address": "friday18qn8y28rq5x0axjsvyt359h3mcgpeteftnrr7r",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday17lqvmq96patrwe7xhssul0k2wdd664kna7seg5",
+          "address": "friday1qz2q3s5pjzrvs3ddtsmjdd0pcjplrc6tep4tq5",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1y62c84ev40wktf5244vk6zctctsudv3p7f764k",
+          "address": "friday1vddc9taj0mcqkff03mzf05gxt6ndk0ud6tvfm9",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday10cxgksp6yealhezhgma7jgg20r6gtcdpd3w6e5",
+          "address": "friday124vsc0umnnk8jc8673ae0ayuhehm9fe4r4c38r",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1m9lct4l7rshyk8h5cj6m3h9akj6hjtujwn8t8g",
+          "address": "friday16x74cecn9nmygvqgz3hv5sx44hlhsvqh74pzrp",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday13d9xemwzz8n4k5a9u3qjsk6pk7l62e3ms55mzt",
+          "address": "friday19zsdrgaafzy8y0xh63qnt7fgtxx0mj2kfnypzl",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1r4gxe4dgx40fl9de7lxcl40h7ltmmp7fglmvx4",
+          "address": "friday1slj7flmfaj43w83wfw4k5wlj7gg7xlq759arek",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1lm9y9kuc4ju4jdr8ra8dcw894pqsjqt6g2fld6",
+          "address": "friday17fc5m47q46ateg04e0rptnva5mkmrmcuntxxt9",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1ktv6a5q626cn0tny96gwnysdp6s9p6yec05y93",
+          "address": "friday165klnfk6hdngsls7fg536zwgrr2nwu7zrrwy9n",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1xpkja5fv9yqudevq5ajvfuhn4h8xn3pc30nv3f",
+          "address": "friday14ga8zjsn66rafk2cukgysusslnkg09tplyyft7",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday18j5lchq92zwu6p4xp5pmzwa88mxcnmrnkadvde",
+          "address": "friday1m705fqk2nnu7auvk3slax3ukllyph34g5clc9j",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1yl9czam9zrdz8kh9pg8kgwvl6axe8njkq2qsw5",
+          "address": "friday1azg5wumqhgs9xq4k8s3ku0se7w2jfeqksj5u00",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1gq5yc47l6v7a6zaa5vp0as6kk7rehcgh7xs3k2",
+          "address": "friday16frk3xjy6d5tt0ly8s54fa9xp6uep28quv6jag",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday18l98vxv39ue84ka4zzqtxvhhc889x058t8u9mg",
+          "address": "friday14lud7ce0y85xhul4lm53jqqznp98tj60g39p8u",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1j23ajnq605z587sncl6dgaplukcwvyfz3da2p8",
+          "address": "friday1tuycc8pc9e3rzrej93ukl04njhvwdlc65m5dpy",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday10yjnfgq3ujddahzfn0z0c5qtjq2l3m2hgv6yty",
+          "address": "friday1vrp0zpkmgue8qheeqex47l8rn23pq7artefxy7",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1f3dt8c9vm52lga76lt8ysp9n4m7n52vx8ug6rz",
+          "address": "friday17uc508x8q9dn8nsg3aws24qyg5l4fy593vkrf7",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1lx2vphlnsqj5rjw7y6wx4mr6llx32adhgg6lxa",
+          "address": "friday1c68ew4zd5kssl5xt8n0x94x57wywf0qw6wkqpp",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1pl99n5gclmhqstj43umsmgsy96t8l05cuwf3de",
+          "address": "friday1m45lvlusyct0rkkxvq9fum47d4lj4cwtw3zmn7",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1eswxlrnxw6pcshlt72anldkuyjq30py9m0ufy2",
+          "address": "friday1447c6zmla8l7rfpf22a69dsdukwzsz0ynprsvg",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday136qtxntw6qt55fhyk5gkmx0c3nrdqr848ulzg3",
+          "address": "friday1tahelulglhu9wfwf27whysgap3t34qu9xj9s6e",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1ep3j4v096ypwzkpvn8q42lelh6kk9dy6hhc4q7",
+          "address": "friday1rw7ls7ta2w8d7a79cthn6txerpj6ugxqfppckc",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday13ulpehe72e4edwavqse9htkg6qgw7ksnhy6m9y",
+          "address": "friday15ja6lzrarn943smmhwvhyduxafujtd3v3v2nmj",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1nqq6rq27uk897clfzhg888sne2zvkgd8dapyxn",
+          "address": "friday1jwlpkkhx4xhmuvkryh6ln4djyj3gmhfeg3vdz4",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1cvj3ux7qya4wtv6r0az73g7a9jgqq8n2yw3r6g",
+          "address": "friday160erkwsh49jgvymxw5mvpsjn6yyq3e8rhgw62v",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday13plvhtrshp0xkxz4zujhr27jf6k7dtutvfnxc3",
+          "address": "friday1g2rn7eryp95qqqwjh386ze6amtj9ewtkk6zm75",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1zaputrhagqw0ueq50stswlkp79plus4ux3qq44",
+          "address": "friday1ql5482gnh6acqllu5lpw88hlf6l4c3keyuvvep",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1pyyk5qum4cleqawhvfrue44zyqe7hyqyvtpwq3",
+          "address": "friday1u62g946pcdnvw5wyqleu80y4m5twrkx2tresqh",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1hjuuprpzytsvfyr0qjxtlccwruk69c3hzskvj2",
+          "address": "friday1mpdhrj6fvrx4c7l0q3ds5x8kcf0u22vlvgu7vl",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1hs4lkkaksv62z5rk67vkccgwpcws89hshg3kun",
+          "address": "friday1d83gqre0l20why4plw3wtyr9vzae7m09nh9u59",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1agwr0r7z734syjyxj9ku2hyl5ehmer7kpzkzdv",
+          "address": "friday1xx6xarqzru85updkkrfr4ujve087vtptrk8spj",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1k5nvras2qzcf0ffjza4c6w2lhra302gqp5xcdd",
+          "address": "friday164s2lzj7nglv5v73g4wzd4033ul2a6rg5za50q",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday146nes646mk9swssdvqajq534ga9kk6ftaq9dkg",
+          "address": "friday1hasz29dsmqpmlgx9n9awljjkezf05ypgdgtl8y",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1lwpaada0x5mstgh9a9at25p502a3h793p4uj5u",
+          "address": "friday1lq9vrljg5yakg34rtx39xzdpd33ajc9re7zv5v",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1acs0aerxvmf7qef84u2fyz07dfdzrwfrp3mk06",
+          "address": "friday164kwd69mmdmm2y5mmvpf4du0e9wxhzquxltt6p",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday102kzjqs8n0s5vld8seea4zcjhwhkpk7pwag5j6",
+          "address": "friday1nakvv9mvmd8j5x2ly4efze70fm9yqqqhvlppr9",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1erkl2n65tq22ykazheap0sutyk8cwzxdh5jp9x",
+          "address": "friday1kxj8g9dxzqp5qmk49m7g0mrvfvf2v8w8np0dry",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1azmmwuhvxuzh6vshrl806vv9jruylxa5mehfr3",
+          "address": "friday19vhhzycnexgdxe35r0k9fva29jumk247w6fapa",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1t70cflud2hl53335w4w9r03nw2qn6m7mfv3t7w",
+          "address": "friday1g9mqd9z6pfrd56uljnxz7leh00glxa0nex5w22",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday19tze7tu9tensh99ydes030eu2q9vhh3fkywuqq",
+          "address": "friday1g8afra8e29yrq766aj2zsgdzmr734pz23xg3wn",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1ex8jh4a5ufhljvw93vysjh3mwg6djt0gf4w733",
+          "address": "friday10l5ty532l3x5pvhrlax8g7elkkphae7n6van9c",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1l73jx8e6nfpf2ymmzq63fmuw6gwx4fr04nphk0",
+          "address": "friday1dmtp3c932zpzdwr72d5rd08k07dx7mffjgt43z",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1tuxgtv968udlmxs5t8f4wcha7uv639v7hx7wu2",
+          "address": "friday14u7dvqmhlwltz572k2z29cvuxzktdzufkpxa3y",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday16r2k48rnrp02ahf6s3wfyeam5ves2sj4h0lxc9",
+          "address": "friday1lqd853cmal7d3ueu5njp0k0z8xk06jqnta2em8",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday14tceut0lmmdpjztparwhtpuk0vuf3r0t5sms5s",
+          "address": "friday1q9g9nk7zyjq3zm0mttlah3wc0umz3k9cyw2ruv",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1r62jcqfh649cujdyvcvt4z7kfv2c0j2l3fqkq7",
+          "address": "friday10xxkn27w7qgh5hqenkm930asjqyxg9750up87h",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1pze8h0zluj7nn5mt9taghqnt8rwpl00qeahegf",
+          "address": "friday12vp3n0n9fchdfmg924ek9nv99zm2qh6gt59rtx",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1hefz3uafmwvplnc2f7wm3fy9kfxkg9rz56a0cn",
+          "address": "friday1m25swy3as5kqtmwn82puzwjxd96drj9jf60yar",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1dzykkyh8ecjfmmang0trpz747erhlqds9ttkrz",
+          "address": "friday1vj2rx2x5f4wsxmyv5ma6hu6fjfxjgq9znk0c7a",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1vw93rf57pms3dastk0cldlnzh4z3whlnj9nefp",
+          "address": "friday1hapf9n8yd58w2hjhxs9ktzv73r5rwaz5kanzjq",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1g9x74d4aqtkk6n4qqdkqk2cgqj96all9as8ehy",
+          "address": "friday15qazvkmvn3w7n2597zzvtrpgf5qyupjex2vm7h",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1ruf3vcgmstah5esft9gw5xtye3nzdv0tzr242c",
+          "address": "friday1jlerzc4ru0ffyz05fln8dxzk0786z6fjsxzt5r",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1r8v9n78mecwscsvqy6t78n7zyxpeuwtueu2876",
+          "address": "friday1zjk2gdr6ghqwfd0y0kjt7gw8rxa7pca2dkm7q7",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1vxpadxvs0uuavxmw2zsvh04hsu78eltkgdavlj",
+          "address": "friday1jg87g4fwqfgjluj3qnr7rv949d3aq2w80v2e6h",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday13fcf68astcxn0p3pphv7mkdqldycf2mrxp3kag",
+          "address": "friday12acnuqumvqs63p8axr5l02smm4hdjqzj6j0su2",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1lg9yka9t2jrp9y3mu0jhl85a60fjmgdf5s8qwj",
+          "address": "friday100k6yz7awcv9s3cqkk85ruwjszlr42kp60r0dd",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1lduyhj43jqdce2m3dk8etn2spavme7s9ks30ha",
+          "address": "friday1dn9e7su0tyq7r67sg4858mmz0ce33kh3m7dkmx",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1q57fmw3v27e4wpxkqxh7huttpvkk36c36k5qd2",
+          "address": "friday1klwzyeucd4q4wdr9pumgfm78w76spg78x6e970",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1er70c55crdsnq72t934fhv5jgh7kmcgs6amlak",
+          "address": "friday1fk3dukzqg0mhs0er2mhedyvjvx9zs6d8uvswe0",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1kugkqnaqut9tcyuaspvsg6frlgjlla8tqqnghn",
+          "address": "friday1kwxa96p3yt48str5mvqc7txenhdsdjtm5ykhpj",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1928kmqeyg808g07wzf7reakm9gz3srd4frhcn5",
+          "address": "friday1qdszxj46ay65sg9eh955sx68swzuga5ydjnrdv",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1v07rds5zk53gedj0j5vxnxdsfelfmlffxmq4dk",
+          "address": "friday1j8lnk5j7qh3xl7vfzzefs37urgnc5p5raucyvj",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1m6t43x597q2qjrdws68k9jne939x86m69wtmwj",
+          "address": "friday1s0q34r6rhekezqj3x0dy82mcs9p9rn89gzx5lw",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1wvunlmepq98wmscq9nf5vrzcv7r8d6kx5he8dx",
+          "address": "friday10skr5d20q2pgq2vaeph9nv9t4fapuk94gc8fcj",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         },
         {
-          "address": "friday1gdk69h0wgx92462zjtrqx7jkvch92jtfrucsc3",
+          "address": "friday1kcuyu5xyy3pvhlq70rynytfa9a5ex7m3ydapuy",
           "initial_balance": "1000000000000000000000000000",
           "initial_bonded_amount": "1000000000000000000"
         }
       ],
       "chain_name": "testnet"
     },
-    "supply": {
-      "supply": []
-    },
-    "params": null,
-    "distribution": {
-      "fee_pool": {
-        "community_pool": []
+    "staking": {
+      "params": {
+        "unbonding_time": "1814400000000000",
+        "max_validators": 100,
+        "max_entries": 7,
+        "bond_denom": "stake"
       },
-      "community_tax": "0.020000000000000000",
-      "base_proposer_reward": "0.010000000000000000",
-      "bonus_proposer_reward": "0.040000000000000000",
-      "withdraw_addr_enabled": true,
-      "delegator_withdraw_infos": [],
-      "previous_proposer": "",
-      "outstanding_rewards": [],
-      "validator_accumulated_commissions": [],
-      "validator_historical_rewards": [],
-      "validator_current_rewards": [],
-      "delegator_starting_infos": [],
-      "validator_slash_events": []
+      "last_total_power": "0",
+      "last_validator_powers": null,
+      "validators": null,
+      "delegations": null,
+      "unbonding_delegations": null,
+      "redelegations": null,
+      "exported": false
     },
-    "bank": {
-      "send_enabled": true
+    "gov": {
+      "starting_proposal_id": "1",
+      "deposits": null,
+      "votes": null,
+      "proposals": null,
+      "deposit_params": {
+        "min_deposit": [
+          {
+            "denom": "stake",
+            "amount": "10000000"
+          }
+        ],
+        "max_deposit_period": "172800000000000"
+      },
+      "voting_params": {
+        "voting_period": "172800000000000"
+      },
+      "tally_params": {
+        "quorum": "0.334000000000000000",
+        "threshold": "0.500000000000000000",
+        "veto": "0.334000000000000000"
+      }
+    },
+    "genutil": {
+      "gentxs": [
+        {
+          "type": "friday/StdTx",
+          "value": {
+            "msg": [
+              {
+                "type": "friday/MsgCreateValidator",
+                "value": {
+                  "description": {
+                    "moniker": "node1",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  },
+                  "commission": {
+                    "rate": "0.100000000000000000",
+                    "max_rate": "0.200000000000000000",
+                    "max_change_rate": "0.010000000000000000"
+                  },
+                  "min_self_delegation": "1",
+                  "delegator_address": "friday1tlgy3xr5s9pdvc3kl3cvtwqey7aylwn8c0mr5z",
+                  "validator_address": "fridayvaloper1tlgy3xr5s9pdvc3kl3cvtwqey7aylwn8dmyt32",
+                  "pubkey": "fridayvalconspub16jrl8jvqq9ckgd25f3e9qv6wfse4jkjw89v5666vfe3yj6r6ff295ezfwdx9xn2yx4t9s3tcfftkvwrsfc6hvsnpvdtxc3thg43yvnt4wfc9j32pt9zhvm222pg554jyvd3rycnjfenk7j24f4mrx7ns9a6yss34v3n4xdpn2d3ks668g33yxw2z29c8zm6wg3fjka3ewddyyezpxagx6ksc9hhg6",
+                  "value": {
+                    "denom": "stake",
+                    "amount": "100000000"
+                  }
+                }
+              },
+              {
+                "type": "executionengine/CreateValidator",
+                "value": {
+                  "validator_address": "friday1tlgy3xr5s9pdvc3kl3cvtwqey7aylwn8c0mr5z",
+                  "cons_pubkey": "fridayvalconspub16jrl8jvqq9ckgd25f3e9qv6wfse4jkjw89v5666vfe3yj6r6ff295ezfwdx9xn2yx4t9s3tcfftkvwrsfc6hvsnpvdtxc3thg43yvnt4wfc9j32pt9zhvm222pg554jyvd3rycnjfenk7j24f4mrx7ns9a6yss34v3n4xdpn2d3ks668g33yxw2z29c8zm6wg3fjka3ewddyyezpxagx6ksc9hhg6",
+                  "description": {
+                    "moniker": "node1",
+                    "identity": "",
+                    "website": "",
+                    "details": ""
+                  }
+                }
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas": "200000"
+            },
+            "signatures": [
+              {
+                "pub_key": {
+                  "type": "tendermint/PubKeySecp256k1",
+                  "value": "AzOL0tqc4ICfwcK76I7xRKo0Lh+ucfw+bxo6/w5Ui4vc"
+                },
+                "signature": "+O+Aj80evSU8LyM7i0hR++7ROCmzdA25BcNaDa4UTehf6nJQEE1W14ImTmFtDxDlV4rAFdMxhYhMId5LzwjPaQ=="
+              }
+            ],
+            "memo": "01b41ff5d1cee9634f2bb6915607daa06d011ef7@10.0.0.7:26656"
+          }
+        }
+      ]
+    },
+    "mint": {
+      "minter": {
+        "inflation": "0.130000000000000000",
+        "annual_provisions": "0.000000000000000000"
+      },
+      "params": {
+        "mint_denom": "stake",
+        "inflation_rate_change": "0.130000000000000000",
+        "inflation_max": "0.200000000000000000",
+        "inflation_min": "0.070000000000000000",
+        "goal_bonded": "0.670000000000000000",
+        "blocks_per_year": "6311520"
+      }
     }
   }
 }
