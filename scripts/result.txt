@@ -1,0 +1,9 @@
+I[2020-05-08|08:25:57.437] starting ABCI with Tendermint                module=main 
+I[2020-05-08|08:26:02.911] Executed block                               module=state height=11 validTxs=0 invalidTxs=0
+I[2020-05-08|08:26:02.913] Committed state                              module=state height=11 txs=0 appHash=5F648E6572AB4D198D1DBDA5F2DF98A7CD684DCAC2AAF3D730379AE545194B01
+I[2020-05-08|08:26:08.042] Executed block                               module=state height=12 validTxs=0 invalidTxs=0
+I[2020-05-08|08:26:08.045] Committed state                              module=state height=12 txs=0 appHash=49C2AB7DBD795A59359907D4551E25AA2DFD3E775AA5871E4E851C432AEF1BCF
+I[2020-05-08|08:26:13.005] Executed block                               module=state height=13 validTxs=0 invalidTxs=0
+I[2020-05-08|08:26:13.007] Committed state                              module=state height=13 txs=0 appHash=9AC7279916461F3C4820E93975E68082606AC669538C5B275971D0C7AD395AFB
+I[2020-05-08|08:26:18.059] Executed block                               module=state height=14 validTxs=0 invalidTxs=0
+I[2020-05-08|08:26:18.061] Committed state                              module=state height=14 txs=0 appHash=3E7ED1F1255929A0A4945D7D73D6911DD6F0B73B8F6189FB37514A51ECAA25C4
