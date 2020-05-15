@@ -32,10 +32,10 @@ do
 done
 
 # run execution engine grpc server
-$SRC/CasperLabs/execution-engine/target/release/casperlabs-engine-grpc-server -t 8 $HOME/.casperlabs/.casper-node.sock&
+$SRC/CasperLabs/execution-engine/target/release/casperlabs-engine-grpc-server -z -t 8 $HOME/.casperlabs/.casper-node.sock&
 
 # init node
-nodef init node1 --chain-id testnet
+nodef init node1 tendermint --chain-id testnet
 
 sed -i "s/prometheus = false/prometheus = true/g" ~/.nodef/config/config.toml
 
