@@ -1,5 +1,12 @@
 #!/bin/bash
 
+wget http://www.cmake.org/files/v3.6/cmake-3.6.1.tar.gz
+tar xvzf cmake-3.6.1.tar.gz
+cd cmake-3.6.1
+./bootstrap
+make
+make install 
+cd ..
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 wget https://dl.google.com/go/go1.13.linux-amd64.tar.gz
 sha256sum go1.13.linux-amd64.tar.gz
@@ -30,3 +37,5 @@ sudo npm install -g assemblyscript@0.9.1
 make install
 sudo systemctl stop firewall
 sudo systemctl disable firewalld
+
+
