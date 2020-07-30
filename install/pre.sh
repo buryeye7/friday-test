@@ -37,5 +37,3 @@ sudo npm install -g assemblyscript@0.9.1
 make install
 sudo systemctl stop firewall
 sudo systemctl disable firewalld
-
-

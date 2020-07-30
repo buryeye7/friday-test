@@ -33,7 +33,7 @@ done
 $SRC/CasperLabs/execution-engine/target/release/casperlabs-engine-grpc-server -z -t 8 $HOME/.casperlabs/.casper-node.sock&
 
 # init node
-nodef init node1 tendermint --chain-id testnet
+nodef init node tendermint --chain-id testnet
 
 sed -i "s/prometheus = false/prometheus = true/g" ~/.nodef/config/config.toml
 
@@ -46,7 +46,7 @@ PW="12345678"
 
 expect -c "
 set timeout 3
-spawn clif keys add node1
+spawn clif keys add node
 expect "disk:"
 	send \"$PW\\r\"
 expect "passphrase:"
@@ -54,8 +54,22 @@ expect "passphrase:"
 expect eof
 "
 
-nodef add-genesis-account $(clif keys show node1 -a) 100000000stake
-nodef add-el-genesis-account node1 "10000000000000000000000000000000000000" "1000000000000000000"
+for i in {1..100}
+do
+        expect -c "
+        set timeout 3
+        spawn clif keys add node$i
+        expect "disk:"
+                send \"$PW\\r\"
+        expect "passphrase:"
+                send \"$PW\\r\"
+        expect eof
+        "
+done
+
+
+nodef add-genesis-account $(clif keys show node -a) 100000000stake
+nodef add-el-genesis-account node "2700000000000000000000000000" "1000000000000000000"
 
 # add genesis node
 nodef load-chainspec ~/.nodef/config/manifest.toml
@@ -69,8 +83,8 @@ clif config trust-node true
 # prepare genesis status
 expect -c "
 set timeout 3
-spawn nodef gentx --name node1 
-expect "\'node1\':"
+spawn nodef gentx --name node 
+expect "\'node\':"
 	send \"$PW\\r\"
 expect eof
 "
