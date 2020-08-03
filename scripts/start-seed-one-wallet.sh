@@ -6,7 +6,8 @@
 #fi
 
 
-SRC="$HOME/go/src/github.com/hdac-io/friday"
+#SRC="$HOME/go/src/github.com/hdac-io/friday"
+SRC="$HOME/go/src/github.com/jhlee9623/friday"
 rm -rf ~/.nodef/config
 rm -rf ~/.nodef/data
 rm -rf ~/.clif
@@ -92,6 +93,6 @@ expect eof
 nodef collect-gentxs
 nodef validate-genesis
 
-cp ~/.nodef/config/genesis.json ~/git/friday-test/settings
-cp ~/.nodef/config/manifest.toml ~/git/friday-test/settings
-cat  ~/.nodef/config/genesis.json | jq .app_state.genutil.gentxs[0].value.memo > ~/git/friday-test/settings/seed-address.txt
+#cp ~/.nodef/config/genesis.json ~/git/friday-test/settings
+#cp ~/.nodef/config/manifest.toml ~/git/friday-test/settings
+#cat  ~/.nodef/config/genesis.json | jq .app_state.genutil.gentxs[0].value.memo > ~/git/friday-test/settings/seed-address.txt
